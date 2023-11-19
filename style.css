@@ -4,13 +4,15 @@ body, h1, h2, h3, a {
     text-align: center;
     z-index: 2;
     color: white;
+    margin-top: 6px;
+    margin-bottom: 4px;
 }
 
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: hidden
+    overflow-x: hidden
 }
 
 /* my stuff */
@@ -33,6 +35,12 @@ html, body {
         margin-right: 30%;
         max-width: 40%;
     }
+}
+
+.gameImg{
+    text-align: left;
+    height: 64px;
+    width: 64px;
 }
 
 /* particles stuff */
