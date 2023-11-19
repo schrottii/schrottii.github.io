@@ -1,7 +1,9 @@
-body, h1, h2 {
+/* basic stuff */
+
+body, h1, h2, h3, a {
     text-align: center;
-    color: white;
     z-index: 2;
+    color: white;
 }
 
 html, body {
@@ -11,7 +13,29 @@ html, body {
     overflow: hidden
 }
 
-/* ---- particles.js container ---- */
+/* my stuff */
+.gameDiv {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    opacity: 0.8;
+    background-color: rebeccapurple;
+    border: thick red;
+    border-style: solid;
+    color: white;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .gameDiv {
+        margin-left: 30%;
+        margin-right: 30%;
+        max-width: 40%;
+    }
+}
+
+/* particles stuff */
 
 #particles-js {
     width: 100%;
