@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Schrottii</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <h1>Restoring Savegames</h1>
+    <div style="background-color: red; color: black; font-size: 20px;">The old host shut down all my games. Here you can read how to rescue your savegames!<br /><a href="index.html">Click here to go back</a></div>
+
+    <h1>Restoring Savegame</h1>
+    <div class="gameDiv">
+        It works about the same way for all 4 games. It might seem complicated but is actually very easy to do. <br />
+        <b>NOTE: </b> It does NOT work if you did something that would normally also wipe your save, such as deleting browser data or clearing cookies! <br /><br />
+        Here are the 7 steps to rescue your save on PC (for mobile, see the section below):<br />
+
+        <div style="text-align: left">
+            1. Copy the "command" for the game from its section below (the entire part in the green box. If you only copy parts of it, it does not work) <br />
+            2. Open the game's old website <br />
+            3. Open the console (F12 in Firefox, F12 then click Console in Chrome and Edge) <br />
+            4. Paste the "command" for the game you're trying to get the save from (found below in the respective game's section) <br />
+            5. Press enter and close the console (clicking an X button or pressing F12, usually) <br />
+            6. Copy the (rescue) save appended at the bottom of the site entirely and store it somewhere (such as a .txt file) <br />
+            7. Export it in the new hosted website, according to the short instructions described below. Done!
+        </div>
+    </div>
+
+    <h1>Mobile</h1>
+    <div class="gameDiv">
+        Since mobile has no console by default, it needs to be done a bit differently. <a href="https://github.com/liriliri/eruda">With liriliri's eruda program, </a> it is possible to access the console on mobile, without any downloads or rooting required! <br />
+
+        <div style="text-align: left">
+            1. Create a new bookmark. The name does not matter <br />
+            2. Set the address to the following, then save the bookmark: <br />
+            <textarea class="command" id="mobile"></textarea> <br />
+            3. Do steps 1-2 from the normal instructions (above) <br />
+            4. Open the bookmark we have just created. This should add a little button in the bottom right. Click it to open the console <br />
+            5. Do steps 4-7 from the normal instructions (above). Done!
+        </div>
+    </div>
+
+    <h1>SC2FMFR</h1>
+    <div class="gameDiv">
+        <textarea class="command" id="command1"></textarea>
+        <br /><br />
+        The SC2FMFR save code is a normal save code that can be imported ingame without any additional steps.
+    </div>
+
+    <h1>Barrel Name Mixer</h1>
+    <div class="gameDiv">
+        <textarea class="command" id="command2"></textarea>
+        <br /><br />
+        The Name Mixer save code can be imported normally, using the new import button added in update 1.6.1.
+    </div>
+
+    <h1>Shgabb Clicker</h1>
+    <div class="gameDiv">
+        <textarea class="command" id="command3"></textarea>
+        <br /><br />
+        The Shgabb Clicker save code is not normal and the new button called import rescue code, added in update 2.0.2, needs to be used.
+    </div>
+
+    <h1>QuoteQuiz</h1>
+    <div class="gameDiv">
+        <textarea class="command" id="command4"></textarea>
+        <br /><br />
+        The QuoteQuiz save code is not normal and the new button called import rescue code, added in update 1.1, needs to be used.
+    </div>
+
+
+    <br /><br />
+    <a href="https://discord.gg/3T4CBmh">[My Discord Server] - If you have any questions or can't do it with the help provided, you can ask me or others there</a>
+
+    <script src="scripts\commands.js"></script>
+
+    <script src="particles\particles.js"></script>
+    <script src="particles\app.js"></script>
+</body>
+</html>
