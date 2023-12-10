@@ -43,21 +43,21 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.0.1", "shgabb.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "2.0.2", "shgabb.png", {
         desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, over 50 achievements, over 40 artifacts and more! Updates are released frequently. (2023-)",
-        links: [['https://shgabb-clicker.vercel.app/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
+        links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
     }),
     sc2fmfr: new Game("SC2FMFR", "3.3", "app-icon-large.png", {
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>. It is by far the biggest and best mod of that game. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
-        links: [['https://sc2fmfr.vercel.app/', 'Play Online'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
+        links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
     }),
-    nameMixer: new Game("Barrel Name Mixer", "1.6", "canvas.png", {
+    nameMixer: new Game("Barrel Name Mixer", "1.6.1", "canvas.png", {
         desc: "Not sure if this is more of a tool or a game, but here you can combine barrel names and images from Scrap Clicker 2. Lots of funny combinations. You can also save favorites and stuff. (2022-)",
-        links: [['https://barrelnames.vercel.app/', 'Play Online']],
+        links: [['https://schrottii.github.io/barrelnames/', 'Play Online']],
     }),
-    newGame: new Game("QuoteQuiz", "1.0", "quotequiz.png", {
+    newGame: new Game("QuoteQuiz", "1.1", "quotequiz.png", {
         desc: "My newest game, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? (2023-)",
-        links: [['https://quotequiz.vercel.app/', 'Play Online']],
+        links: [['https://schrottii.github.io/quotequiz/', 'Play Online']],
     }),
 }
 
