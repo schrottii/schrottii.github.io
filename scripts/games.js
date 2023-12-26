@@ -14,13 +14,14 @@ class Game {
     }
 
     render(){
-        let ren = `<div class="gameDiv"> <img class="gameImg" src="images/` + this.image + `" /><h2>` + this.name + " v" + this.version + `</h2>`;
+        let ren = `<div class="gameDiv"><div style="display: inline-block; width: 50%"><img class="gameImg" src="images/` + this.image
+            + `" /></div><div style="display: inline-block; width: 50%"><h2>` + this.name + " v" + this.version + `</h2>`;
         if (this.links != undefined) {
             ren = ren + "<h3>";
             for (var lin in this.links) {
-                ren = ren + `<a href="` + this.links[lin][0] + `">[` + this.links[lin][1] + `]</a>  `;
+                ren = ren + `<button><a href="` + this.links[lin][0] + `">` + this.links[lin][1] + `</a></button>  `;
             }
-            ren = ren + "</h3>";
+            ren = ren + `</h3></div><hr><br />`;
         }
         if (this.desc != undefined) {
             ren = ren + this.desc;
@@ -37,13 +38,13 @@ function renderGames() {
     gamesRender.innerHTML = "";
 
     for (g in games) {
-        gamesRender.innerHTML = gamesRender.innerHTML + "<br />" + games[g].render();
+        gamesRender.innerHTML = gamesRender.innerHTML + games[g].render();
     }
 }
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.1", "shgabb.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "2.1.2", "shgabb.png", {
         desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 75 achievements, 45 artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
     }),

@@ -15,6 +15,18 @@ html, body {
     overflow-x: hidden
 }
 
+hr{
+    margin: 0px 0px 0px 0px;
+}
+
+button{
+    background-color: darkslategray;
+    color: papayawhip;
+    margin: 2px 6px 2px 6px;
+    min-width: 60px;
+    min-height: 32px;
+}
+
 /* my stuff */
 .gameDiv {
     text-align: center;
@@ -23,7 +35,7 @@ html, body {
     max-width: 80%;
     opacity: 0.8;
     background-color: rebeccapurple;
-    border: thick red;
+    border: thick mediumpurple;
     border-style: solid;
     color: white;
     margin-bottom: 20px;
