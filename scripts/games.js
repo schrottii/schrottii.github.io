@@ -48,9 +48,9 @@ const games = {
         desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 75 achievements, 45 artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
     }),
-    sc2fmfr: new Game("SC2FMFR", "3.3", "app-icon-large.png", {
+    sc2fmfr: new Game("SC2FMFR", "3.3.1", "app-icon-large.png", {
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>. It is by far the biggest and best mod of that game. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
-        links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
+        links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://discord.com/channels/330332759144792075/539500940185567247/1191122355888599130', 'APK Download (Toast)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
     }),
     nameMixer: new Game("Barrel Name Mixer", "1.6.1", "canvas.png", {
         desc: "Not sure if this is more of a tool or a game, but here you can combine barrel names and images from Scrap Clicker 2. Lots of funny combinations. You can also save favorites and stuff. (2022-)",

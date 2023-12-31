@@ -20,7 +20,6 @@ function renderNews() {
     newsRender.innerHTML = "";
 
     for (n = news.length - 1; n > news.length - 4; n -= 1) {
-        console.log(n)
         newsRender.innerHTML = newsRender.innerHTML + news[n].render();
     }
 }
