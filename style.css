@@ -64,6 +64,14 @@ button{
     max-height: 192px;
 }
 
+.lang {
+    border-radius: 4px;
+    font-size: 20px;
+    outline: 2px solid white;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 /* particles stuff */
 
 #particles-js {
