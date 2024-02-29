@@ -31,6 +31,8 @@ const news = [
     new News(4, "SC2FMFR v3.3.1", "December 31st - A new SC2FMFR update is out now! Just 2 hours before the new year begins in Europe... I hope you enjoy this update as much as I do, it's one of my favorite FR updates! It adds 2 cool new settings, makes tree upgrades cheaper, fixes bugs and more!"),
     new News(5, "Shgabb Clicker v2.2 - v2.2.4", "January 26th - I should really update this more often... at the beginning of the month, Shgabb v2.2, v2.2.1, v2.2.2 and v2.2.3 were released. Adding the new feature Challenges and more. Now, after 14(!) days, v2.2.4 is finally out, reworking Auto Shgabb."),
     new News(6, "Website v1.1", "January 26th - I have expanded the About Me section, making the text longer, and the list of languages I know prettier."),
+    new News(7, "New Server!", "February 29th - Toast's sibling has finally been born! In this new Discord Server, my games are the focus. The very thing this site is about! Talk about Shgabb Clicker & the other games there. https://discord.gg/CbBeJXKUrk"),
+    new News(8, "Website v1.2", "February 29th - Added the new games server! Added Idle Bar to the games list. Also increased width of the boxes, added images for the servers, moved restoring saves to somewhere else and more"),
 ]
 
 renderNews();

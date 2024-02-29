@@ -44,7 +44,7 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.2.4", "shgabb.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "2.2.5", "shgabb.png", {
         desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 90 Achievements, 55 Artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
     }),
@@ -59,6 +59,10 @@ const games = {
     newGame: new Game("QuoteQuiz", "1.1", "quotequiz.png", {
         desc: "My newest game, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? (2023-)",
         links: [['https://schrottii.github.io/quotequiz/', 'Play Online']],
+    }),
+    idleBar: new Game("Idle Bar", "1.6.9", "up_energy.png", {
+        desc: "My first proper webgame, co-deved with someone else who offered and integrated access to a server, which granted this game unique features like ingame leaderboards and server-side saves. About 5 currencies, about 20 upgrades, about 50 trophies, Quests and more. Not available anymore due to the lack of a server. (2020-2022)",
+        links: [['https://idle-bar.fandom.com/wiki/Idle_Bar_Wiki', 'Wiki']],
     }),
 }
 
