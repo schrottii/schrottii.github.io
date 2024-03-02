@@ -61,8 +61,8 @@ const games = {
         links: [['https://schrottii.github.io/quotequiz/', 'Play Online']],
     }),
     idleBar: new Game("Idle Bar", "1.6.9", "up_energy.png", {
-        desc: "My first proper webgame, co-deved with someone else who offered and integrated access to a server, which granted this game unique features like ingame leaderboards and server-side saves. About 5 currencies, about 20 upgrades, about 50 trophies, Quests and more. Not available anymore due to the lack of a server. (2020-2022)",
-        links: [['https://idle-bar.fandom.com/wiki/Idle_Bar_Wiki', 'Wiki']],
+        desc: "My first proper webgame, co-deved with someone else who offered and integrated access to a server, which granted this game unique features like ingame leaderboards and server-side saves. About 5 currencies, about 20 upgrades, about 50 trophies, Quests and more. The full version is not available anymore due to the lack of a server. However, since March 2024, a lite version without the server features is available! (2020-2022)",
+        links: [['https://schrottii.github.io/idle-bar-lite/', 'Play Online (Lite)'], ['https://idle-bar.fandom.com/wiki/Idle_Bar_Wiki', 'Wiki']],
     }),
 }
 
