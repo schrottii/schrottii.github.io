@@ -44,8 +44,8 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.2.5", "shgabb.png", {
-        desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 90 Achievements, 55 Artifacts and more! Updates are released frequently. (2023-)",
+    shgabbClicker: new Game("Shgabb Clicker", "2.3.1", "shgabb.png", {
+        desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 100+ Achievements, 55 Artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
     }),
     sc2fmfr: new Game("SC2FMFR", "3.3.1", "app-icon-large.png", {
