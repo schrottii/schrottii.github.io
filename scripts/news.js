@@ -34,6 +34,8 @@ const news = [
     new News(7, "New Server!", "February 29th - Toast's sibling has finally been born! In this new Discord Server, my games are the focus. The very thing this site is about! Talk about Shgabb Clicker & the other games there. https://discord.gg/CbBeJXKUrk"),
     new News(8, "Website v1.2", "February 29th - Added the new games server! Added Idle Bar to the games list. Also increased width of the boxes, added images for the servers, moved restoring saves to somewhere else and more"),
     new News(9, "Idle Bar Lite", "March 2nd - Idle Bar is back! Albeit in a limited version. This version does not have server features such as leaderboards, server-side saving or tabs, but this is the only way I could make it bring it back (for now, at least). Its entry in the games section has been updated!"),
+    new News(10, "Toasty Bird", "March 10th - A new game, Toasty Bird, is out now! You can find it in the games list. It's my first new game of this new era, with the website, the games server... I have lots of ideas for new games and cool updates, so stay tuned! And make sure to play Toasty Bird!"),
+    new News(11, "Website v1.3", "March 10th - This website update adds another row to each game, where you can see whether its in active development, semi-active, or done, its genre(s) and how many stars I give it from 1 to 5! This update also adds the new game Toasty Bird."),
 ]
 
 renderNews();
