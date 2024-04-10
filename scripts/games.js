@@ -48,12 +48,12 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.3.1", "shgabb.png", {
-        desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 100+ Achievements, 55 Artifacts and more! Updates are released frequently. (2023-)",
+    shgabbClicker: new Game("Shgabb Clicker", "2.4", "shgabb.png", {
+        desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 100+ Achievements, 65+ Artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
     }),
-    toastyBird: new Game("Toasty Bird", "1.0", "bird.png", {
+    toastyBird: new Game("Toasty Bird", "1.1", "bird.png", {
         desc: "My newest game, and the beginning of a new era together with the games server, is finally here! It is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
         info: ["active", "Active (2024-)", "Action", "3/5"],
