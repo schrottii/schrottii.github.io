@@ -48,7 +48,7 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.4", "shgabb.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "2.4.1", "shgabb.png", {
         desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 100+ Achievements, 65+ Artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
@@ -68,10 +68,10 @@ const games = {
         links: [['https://schrottii.github.io/barrelnames/', 'Play Online']],
         info: ["semiactive", "Semi-Active (2022-)", "Tools", "3/5"],
     }),
-    quoteQuiz: new Game("QuoteQuiz", "1.1", "quotequiz.png", {
-        desc: "QuoteQuiz, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? (2023-)",
+    quoteQuiz: new Game("QuoteQuiz", "1.2", "quotequiz.png", {
+        desc: "QuoteQuiz, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? 75+ questions, now with reworked, more graphical, design! (2023-)",
         links: [['https://schrottii.github.io/quotequiz/', 'Play Online']],
-        info: ["active", "Active (2023-)", "Quiz", "2/5"],
+        info: ["active", "Active (2023-)", "Quiz", "3/5"],
     }),
     idleBar: new Game("Idle Bar", "1.6.9", "up_energy.png", {
         desc: "My first proper webgame, co-deved with someone else who offered and integrated access to a server, which granted this game unique features like ingame leaderboards and server-side saves. About 5 currencies, about 20 upgrades, about 50 trophies, Quests and more. The full version is not available anymore due to the lack of a server. However, since March 2024, a lite version without the server features is available! (2020-2022)",
