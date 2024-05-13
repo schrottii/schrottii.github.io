@@ -78,6 +78,11 @@ const games = {
         links: [['https://schrottii.github.io/idle-bar-lite/', 'Play Online (Lite)'], ['https://idle-bar.fandom.com/wiki/Idle_Bar_Wiki', 'Wiki']],
         info: ["done", "Done (2020-2022)", "Idle", "3/5"],
     }),
+    combCalc: new Game("CombCalc", "1.0", "combcalc.png", {
+        desc: "This tool shows you info regarding the Global Challenge in Scrap Clicker 2. (2024-)",
+        links: [['https://schrottii.github.io/combcalc/', 'Use Online']],
+        info: ["active", "Active (2024-)", "Tools", "2/5"],
+    }),
 }
 
 renderGames();
