@@ -38,6 +38,7 @@ const news = [
     new News(11, "Website v1.3", "March 10th - This website update adds another row to each game, where you can see whether its in active development, semi-active, or done, its genre(s) and how many stars I give it from 1 to 5! This update also adds the new game Toasty Bird."),
     new News(12, "Toasty Bird v1.2", "May 2nd - This update adds SKINS, a SHOP, improved patch notes and more!"),
     new News(13, "CombCalc", "May 13th - This is not a new game. It's a tool. Whether the name mixer is a game or a tool is debatable, but this is definitely a tool. An app. And it's out now! Here you can see whether the Global Challenge in Scrap 2 is active, plus more info. Later it will also have calculators."),
+    new News(14, "New updates", "June 23rd - Sorry for the lack of news! There have been many new updates. CombCalc v1.1, Name Mixer v1.7, Shgabb Clicker's latest version is v2.5.3 & more!"),
 ]
 
 renderNews();
