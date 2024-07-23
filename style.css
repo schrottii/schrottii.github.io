@@ -30,9 +30,9 @@ button{
 /* my stuff */
 .gameDiv {
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 80%;
+    margin-left: 6%;
+    margin-right: 6%;
+    max-width: 88%;
     opacity: 0.8;
     background-color: rebeccapurple;
     border: thick mediumpurple;
@@ -70,6 +70,17 @@ button{
     outline: 2px solid white;
     margin-left: 4px;
     margin-right: 4px;
+}
+
+.topNavigation {
+    background-color: rebeccapurple;
+    border: thick mediumpurple;
+    border-style: solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 28px;
 }
 
 /* particles stuff */

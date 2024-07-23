@@ -29,19 +29,14 @@ particlesJS('particles-js',
                 "type": "edge",
                 "stroke": {
                     "width": 4,
-                    "color": "#ff2de6"
+                    "color": "#560f4e"
                 },
                 "polygon": {
                     "nb_sides": 5
-                },
-                "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
                 }
             },
             "opacity": {
-                "value": 0.5,
+                "value": 0.3,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -69,7 +64,7 @@ particlesJS('particles-js',
             },
             "move": {
                 "enable": true,
-                "speed": 29.988083682536654,
+                "speed": 30,
                 "direction": "none",
                 "random": false,
                 "straight": false,

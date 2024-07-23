@@ -25,7 +25,7 @@ class Game {
             ren = ren + `</h3></div>`;
         }
         if (this.info != undefined) {
-            ren = ren + "<hr><img src='images/" + this.info[0] + ".png'> " + this.info[1] + "   <img src='images/genre.png'> " + this.info[2] + "   <img src='images/star.png'> " + this.info[3];
+            ren = ren + "<hr><div style='font-size: 24px'><img src='images/" + this.info[0] + ".png'> " + this.info[1] + "   <img src='images/genre.png'> " + this.info[2] + "   <img src='images/star.png'> " + this.info[3] + "</div>";
         }
         if (this.desc != undefined) {
             ren = ren + "<hr><br />" + this.desc;
@@ -48,7 +48,7 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.5.3", "shgabb.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "2.7.1", "shgabb.png", {
         desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 100+ Achievements, 65+ Artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
@@ -82,6 +82,11 @@ const games = {
         desc: "This tool shows you info regarding the Global Challenge in Scrap Clicker 2. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online']],
         info: ["active", "Active (2024-)", "Tools", "2/5"],
+    }),
+    fisecraft: new Game("Fisecraft", "1.0", "fisecraft.png", {
+        desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, a new crop, some food, some teleportation items and more. ~22 new blocks and ~27 new items. (2024-)",
+        links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download']],
+        info: ["active", "Active (2024-)", "Minecraft mod", "3/5"],
     }),
 }
 
