@@ -41,6 +41,7 @@ const news = [
     new News(14, "New updates", "June 23rd - Sorry for the lack of news! There have been many new updates. CombCalc v1.1, Name Mixer v1.7, Shgabb Clicker's latest version is v2.5.3 & more!"),
     new News(15, "Fisecraft is out now!", "July 23rd - These news are a bit delayed, but oh well... Big announcement! The past few weeks I've finally started learning another programming language: Java. It took a while to learn, create and test, but my first MC mod is out now: Fisecraft! This is just the beginning. It adds a bit of everything: a new armor and tool set, several building blocks, a new crop, some food, some teleportation items and more. ~22 new blocks and ~27 new items. You can find its links at the bottom of the games section, where it now has an entry."),
     new News(16, "Website v1.4", "July 23rd - This website update makes the background less distracting, increases readability of texts, adds Fisecraft, Java to my list of languages, cool pages mini section, and a navigation bar at the top."),
+    new News(17, "Toasty Bird v1.3 & Shgabb Clicker v2.9", "August 2nd - First news of the month... Toasty Bird v1.3 & Shgabb Clicker v2.9 are out now! The former adds Skills, a completely new inventory screen, and more. The latter adds new Upgrades, backgrounds and many improvements. Enjoy!"),
 ]
 
 renderNews();
