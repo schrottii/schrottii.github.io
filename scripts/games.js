@@ -48,12 +48,12 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "2.9", "shgabb.png", {
-        desc: "Shgabb Clicker is my newest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 150+ Achievements, 75+ Artifacts and more! Updates are released frequently. (2023-)",
+    shgabbClicker: new Game("Shgabb Clicker", "3.0", "shgabb.png", {
+        desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 150+ Achievements, 75+ Artifacts and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
     }),
-    toastyBird: new Game("Toasty Bird", "1.3", "bird.png", {
+    toastyBird: new Game("Toasty Bird", "1.3.1", "bird.png", {
         desc: "My newest game, and the beginning of a new era together with the games server, is finally here! It is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
         info: ["active", "Active (2024-)", "Action", "4/5"],
@@ -83,8 +83,8 @@ const games = {
         links: [['https://schrottii.github.io/combcalc/', 'Use Online']],
         info: ["active", "Active (2024-)", "Tools", "2/5"],
     }),
-    fisecraft: new Game("Fisecraft", "1.0", "fisecraft.png", {
-        desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, a new crop, some food, some teleportation items and more. ~22 new blocks and ~27 new items. (2024-)",
+    fisecraft: new Game("Fisecraft", "1.1", "fisecraft.png", {
+        desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, mobs, some food, some teleportation items and more. It adds 78 recipes, 33 blocks, 33 items, 4 mobs (1 boss) and 2 structures. (2024-)",
         links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download']],
         info: ["active", "Active (2024-)", "Minecraft mod", "3/5"],
     }),
