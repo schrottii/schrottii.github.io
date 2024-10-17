@@ -1,4 +1,4 @@
-// News class
+﻿// News class
 class News {
     constructor(id, header, text) {
         this.id = id;
@@ -19,7 +19,7 @@ var newsRender = document.getElementById("newsRender");
 function renderNews() {
     newsRender.innerHTML = "";
 
-    for (n = news.length - 1; n > news.length - 4; n -= 1) {
+    for (n = news.length - 1; n > news.length - 7; n -= 1) {
         newsRender.innerHTML = newsRender.innerHTML + news[n].render();
     }
 }
@@ -42,6 +42,12 @@ const news = [
     new News(15, "Fisecraft is out now!", "July 23rd - These news are a bit delayed, but oh well... Big announcement! The past few weeks I've finally started learning another programming language: Java. It took a while to learn, create and test, but my first MC mod is out now: Fisecraft! This is just the beginning. It adds a bit of everything: a new armor and tool set, several building blocks, a new crop, some food, some teleportation items and more. ~22 new blocks and ~27 new items. You can find its links at the bottom of the games section, where it now has an entry."),
     new News(16, "Website v1.4", "July 23rd - This website update makes the background less distracting, increases readability of texts, adds Fisecraft, Java to my list of languages, cool pages mini section, and a navigation bar at the top."),
     new News(17, "Toasty Bird v1.3 & Shgabb Clicker v2.9", "August 2nd - First news of the month... Toasty Bird v1.3 & Shgabb Clicker v2.9 are out now! The former adds Skills, a completely new inventory screen, and more. The latter adds new Upgrades, backgrounds and many improvements. Enjoy!"),
+    new News(18, "Statement about Ads", "October 14th - Some of you may have noticed ads on my own website (schrottii.github.io) and in Shgabb Clicker. They were never announced - that is because they were simply tests. Enough time has passed and enough variations have been trialed to come to a conclusion. Those ads are not worth it yet, for such a small playerbase, and thus they will be removed from the game, and most from the website as well. I want to keep one so I can estimate the amount of visitors it gets."),
+    new News(19, "Money, Pricing, Donations", "October 14th - I have been making these games, art, etc. for years now, and have barely earned anything from it. This year has been awful for me financially, and I probably deserve to earn at least something for my work. I have decided to go for a Donation-based monetization model, meaning my games keep being free, no subscriptions, no masses of ads. If you feel like I deserve to be paid for my work you can do that now: <a href='https://ko-fi.com/schrottii'>link to my ko-fi</a>"),
+    new News(20, "SC2FMFR v3.4", "October 14th - It is the first update in almost a year, and the first one since the creation of my server. It improves gameplay on wide screens / landscape, improves performance, fixes bugs, balances Beam costs and more. The game is more polished now."),
+    new News(21, "MC 1.18.2 modding template", "October 15th - My second MC modding related, uhm, project, is out now! It's a template I'll use for future mods, and anyone else can use it too. It's open source and easy to use, including a little tutorial and step-by-step instructions. <a href='https://github.com/schrottii/examplemod'>link to the repo here</a>"),
+    new News(22, "SC2FMFR on galaxy", "October 17th - On Monday, SC2FMFR was updated to version 3.4. Now, the game is also available on the idle game website galaxy! This lets more people find and play the game, and potentially branch out to my other games or my server. It has already accumulated 14 ❤️, 266 plays, 161 hours of playtime, 4.5 stars and several comments - this is some of the most attention my games have ever received, and it seems like people are enjoying it. It's encouraging me to do more idle stuff, and step up my game. Thank you! <a href='https://galaxy.click/play/474'>SC2FMFR on galaxy link</a>"),
+    new News(23, "CombCalc v1.2", "October 17th - CombCalc has been updated to version 1.2! Interestingly, this version's new calculator is not related to the Global Challenge or any tokens: It's the More Scrap Calc - used to calculate the appropriate level for the More Scrap Book upgrade. It's annoying to do this formula by hand, so having it integrated here will be useful for many people. This has been kind of planned from the start: CombCalc will be used for all kinds of SC2 calcs, not just GC stuff."),
 ]
 
 renderNews();

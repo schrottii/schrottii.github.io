@@ -48,8 +48,8 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.0", "shgabb.png", {
-        desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 150+ Achievements, 75+ Artifacts and more! Updates are released frequently. (2023-)",
+    shgabbClicker: new Game("Shgabb Clicker", "3.1", "shgabb.png", {
+        desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name and pfp lore. The game contains several currencies, 150+ Achievements, 75+ Artifacts, minigames and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
     }),
@@ -58,7 +58,7 @@ const games = {
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
         info: ["active", "Active (2024-)", "Action", "4/5"],
     }),
-    sc2fmfr: new Game("SC2FMFR", "3.3.1", "app-icon-large.png", {
+    sc2fmfr: new Game("SC2FMFR", "3.4", "app-icon-large.png", {
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>. It is by far the biggest and best mod of that game. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://discord.com/channels/330332759144792075/539500940185567247/1191122355888599130', 'APK Download (Toast)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["done", "Done (2021-2023)", "Idle", "4/5"],
@@ -78,8 +78,8 @@ const games = {
         links: [['https://schrottii.github.io/idle-bar-lite/', 'Play Online (Lite)'], ['https://idle-bar.fandom.com/wiki/Idle_Bar_Wiki', 'Wiki']],
         info: ["done", "Done (2020-2022)", "Idle", "3/5"],
     }),
-    combCalc: new Game("CombCalc", "1.1", "combcalc.png", {
-        desc: "This tool shows you info regarding the Global Challenge in Scrap Clicker 2. (2024-)",
+    combCalc: new Game("CombCalc", "1.2", "combcalc.png", {
+        desc: "This tool shows you info regarding the Global Challenge, and other calculators, in Scrap Clicker 2. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online']],
         info: ["active", "Active (2024-)", "Tools", "2/5"],
     }),
