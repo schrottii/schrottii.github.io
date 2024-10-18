@@ -1,3 +1,23 @@
+/*
+    Palette:
+    #170217   Dark purple
+    #420042   Russian violet
+    #FDB1E4   Lavender pink
+    #5C3700   Sepia
+    #FCF988   Icterine
+    #FFFFFF   White
+*/
+
+@font-face {
+    font-family: text;
+    src: url("fonts/DejaVuSans.ttf");
+}
+
+@font-face {
+    font-family: header;
+    src: url("fonts/LilitaOne-Regular.ttf");
+}
+
 /* basic stuff */
 
 body, h1, h2, h3, a {
@@ -8,20 +28,31 @@ body, h1, h2, h3, a {
     margin-bottom: 4px;
 }
 
+h1, h2, h3, h4, h5, h6, header {
+    font-family: header;
+}
+
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow-x: hidden
+    overflow-x: hidden;
+    font-family: text;
 }
 
-hr{
+hr {
     margin: 0px 0px 0px 0px;
+    color: #170217;
 }
 
-button{
-    background-color: darkslategray;
-    color: papayawhip;
+a {
+    text-decoration: dotted underline;
+    color: white;
+}
+
+button {
+    background-color: #5C3700;
+    color: #FCF988;
     margin: 2px 6px 2px 6px;
     min-width: 60px;
     min-height: 32px;
@@ -34,10 +65,9 @@ button{
     margin-right: 6%;
     max-width: 88%;
     opacity: 0.8;
-    background-color: rebeccapurple;
-    border: thick mediumpurple;
+    background-color: #420042;
+    border: thick #FDB1E4;
     border-style: solid;
-    color: white;
     margin-bottom: 20px;
 }
 
@@ -73,14 +103,39 @@ button{
 }
 
 .topNavigation {
-    background-color: rebeccapurple;
-    border: thick mediumpurple;
-    border-style: solid;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 8%;
     z-index: 10;
-    font-size: 28px;
+    background-color: rgb(253, 177, 228, 0.5); /* FDB1E4 */
+    border-bottom: 8px groove;
+    border-color: #FCF988;
+    color: #170217;
+    font-size: 18px;
+}
+
+.topButton {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-color: #FCF988;
+    background-color: #420042;
+    color: #170217;
+    word-wrap: anywhere;
+    opacity: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .topNavigation {
+        font-size: 32px;
+    }
 }
 
 /* particles stuff */

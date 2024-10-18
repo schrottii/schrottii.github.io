@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Schrottii</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8311163069228619"
-            crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="particles-js"></div>
     <br /><br />
+    <br /><br />
     <h1>Schrottii</h1>
 
-    <div class="topNavigation">
+    <img src="images/moon.png" style="position: fixed; top: 0%; left: 0%; height: 8%;" onclick="showTopNavigation()" />
+    <div class="topNavigation" id="topNavigation">
+        <img src="images/moon.png" style="float: left; height: 100%; margin-right: 8px" onclick="hideTopNavigation()" />
+        <p style="float: left; vertical-align: middle">Schrottii's Games</p>
 
-        <a href="#gamesRender">My Games</a> //
-        <a href="#newsRender">News</a> //
-        <a href="#other">Other</a>
-
+        <div class="topButton" style="left: 55%;"><a href="#gamesRender" style="text-decoration: none">Games</a></div>
+        <div class="topButton" style="left: 70%;"><a href="#newsRender" style="text-decoration: none">News</a></div>
+        <div class="topButton" style="left: 85%;"><a href="#other" style="text-decoration: none">Other</a></div>
     </div>
 
     <h1>My Games</h1>
@@ -30,53 +30,68 @@
 
     <h1>Other</h1>
     <div class="gameDiv" id="other">
-        <h2>About Me</h2>
+        <h2>About Me:</h2>
         <img src="images/moon.png" class="gameImg" style="float: right" />
-        I'm a young female programmer from Germany who makes some fun idle games and other projects in her free time, for free! I enjoy updating my projects, expanding them, releasing many updates, but they always contain interesting content. Quantity and quality! I love interacting with the players, giving advice, seeing them discuss my games and playing the games myself. I am also an artist (image editing, pixel art, game sprites and more). The best way to contact me is via Discord.<br />
+        I'm a young female programmer from Germany who makes some fun idle games and other projects in her free time, for free! I enjoy updating my projects, expanding them, following the bigger vision, releasing many updates, but they always contain interesting content. Quantity and quality! I love interacting with the players, giving advice, seeing them discuss my games and playing the games myself. <br />
+        I am also an artist (image editing, pixel art, game sprites and more). I also really like wikis and playing games. Nowadays I am a calm and friendly person, I am almost never mad, angry or sad. The best way to contact me is via Discord.<br />
         <br /><br /><hr />
+
+        <h2>Donate:</h2>
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+        <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#170217', 'Y8Y2XMZX1'); kofiwidget2.draw();</script>
+        <br /> <hr />
 
         <h3>My languages:</h3>
         <span style="color: black; background-color: orangered" class="lang">HTML</span>  <span style="color: black; background-color: yellow" class="lang">JS</span>  <span style="color: white; background-color: mediumpurple" class="lang">CSS</span>  <span style="color: white; background-color: #af7219" class="lang">Java</span>
         <br /><br />
         <span style="color: black; background-color: yellow" class="lang">Batchfile</span>  <span style="color: white; background-color: cornflowerblue" class="lang">Py</span>  <span style="color: black; background-color: indianred" class="lang">Wikitext</span>  <span style="color: white; background-color: royalblue" class="lang">Markdown</span>
-        <br /><br /><hr />
+        <br /><br />
+
+        <img src="images\flags\germany.png" />
+        <img src="images\flags\usa.png" />
+        <img src="images\flags\rome.png" />
+        <img src="images\flags\china.png" />
+
+        <br /><hr />
 
         <h3>Contact me:</h3>
         Discord username: <span style="background-color: white; color: black">schrottii</span><br />
-        Discord Server for my games: <a href="https://discord.gg/CbBeJXKUrk" style="background-color: white; color: black">Games</a><br />
-        Discord Server for fun: <a href="https://discord.gg/3T4CBmh" style="background-color: white; color: black">Toast</a><br />
+        Discord Server for my games: <a href="https://discord.gg/e6W452uAmg" style="background-color: white; color: black">Games</a><br />
+        Discord Server for fun: <a href="https://discord.gg/jZ6pXqqfJM" style="background-color: white; color: black">Toast</a><br />
         YouTube: <a href="https://www.youtube.com/channel/UC7qnN9M1_PUqmrgOHQipC2Q" style="background-color: white; color: black">Schrottii</a>
         <br /><br /><hr />
 
         <h3>More:</h3>
-        <a href="privacy.html">Privacy Policy (boring)</a> <br />
-        <a href="restore-savegames.html">If you played any of my games on the old host, click here to see how to restore your save</a>
+        <a href="privacy.html">Privacy Policy</a> <br />
+        <a href="restore-savegames.html">Restoring old host saves</a>
         <br /><br /><hr />
 
         <h3>Cool pages:</h3>
         (External links) <br />
         <a href="https://github.com/ozh/github-colors">Github colors by Ozh</a> <br />
         <a href="https://www.markdownguide.org/getting-started/">Markdown guide</a> <br />
-        <a href="https://r.3v.fi/discord-timestamps/">Discord timestamp generator</a>
+        <a href="https://r.3v.fi/discord-timestamps/">Discord timestamp generator</a> <br />
+        <a href="https://coolors.co/">Color palettes</a> <br />
+        <a href="https://flagdownload.com/">Flags</a> <br />
         <br />
     </div>
 
     <div class="gameDiv">
-        <h2>This Website: v1.4</h2>
-        This website displays my games, some text about me, the website and invites to the servers. Fancy background and some basic design. Info to rescue saves. Nothing too crazy yet, but it does its job, and I keep expanding it.
+        <h2>This Website: v1.5</h2>
+        This website presents my games and shares some info about myself. There is also a news section, invites to my servers, and more. It keeps getting expanded.
     </div>
 
     <div class="gameDiv">
         <h2>Schrottii's Games</h2>
         <img src="images/wizard.png" class="gameImg" />
         <button><a href="https://discord.gg/CbBeJXKUrk">Click here to join!</a></button><br />
-        Schrottii's Games is my new Discord server, it is dedicated to my games! You have at least one channel for each game here and people to discuss them with. I am, of course, very active in here.
+        Schrottii's Games is my Discord server, it is dedicated to my games and other work! You have at least one channel for each game here and people to discuss them with. I am, of course, very active in here. It's well moderated and safe.
     </div>
     <div class="gameDiv">
         <h2>Toast</h2>
         <img src="images/toast-pic-by-tpot-square.jpg" class="gameImg" />
         <button><a href="https://discord.gg/3T4CBmh">Click here to join!</a></button><br />
-        Toast is my Discord server that has been active since 2018, it offers a small community for talking about games, shitposting, sharing stuff in your life and more. It used to be the main place of discussion for most of my games, but the new server has taken that function. I am very active in the server.
+        Toast is my Discord server that has been active since 2018, it offers a small weird community for talking about games, shitposting and having fun. It used to be the main place of discussion for most of my games, but the new server has taken that function. I am active in the server. Be warned, the members are not afraid to go pretty far with jokes and potentially post offensive content.
     </div>
 
     <script src="scripts\games.js"></script>
@@ -84,5 +99,37 @@
 
     <script src="particles\particles.js"></script>
     <script src="particles\app.js"></script>
+
+    <script>
+        function hideTopNavigation() {
+            document.getElementById("topNavigation").style.display = "none";
+        }
+        function showTopNavigation() {
+            document.getElementById("topNavigation").style.display = "";
+        }
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8311163069228619"
+            crossorigin="anonymous"></script>
+    <!-- main-ad -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8311163069228619"
+         data-ad-slot="5072722722"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('schrottii', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Donate',
+            'floating-chat.donateButton.background-color': '#FDB1E4',
+            'floating-chat.donateButton.text-color': '#170217'
+        });
+    </script>
 </body>
 </html>

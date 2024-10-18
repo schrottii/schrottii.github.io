@@ -19,10 +19,14 @@ var newsRender = document.getElementById("newsRender");
 function renderNews() {
     newsRender.innerHTML = "";
 
-    for (n = news.length - 1; n > news.length - 7; n -= 1) {
+    for (n = news.length - 1; n > news.length - 8; n -= 1) {
         newsRender.innerHTML = newsRender.innerHTML + news[n].render();
     }
 }
+
+// News can be website updates, game updates, or other announcements
+// They are NOT complete, especially prior to October 2024. I often forget to announce new updates here, especially minor ones
+// The news channel in the Discord server is far more complete and contains more detail
 
 const news = [
     new News(1, "Host issues solved!", "My games are now hosted via Github. All links on this site have been updated."),
@@ -48,6 +52,7 @@ const news = [
     new News(21, "MC 1.18.2 modding template", "October 15th - My second MC modding related, uhm, project, is out now! It's a template I'll use for future mods, and anyone else can use it too. It's open source and easy to use, including a little tutorial and step-by-step instructions. <a href='https://github.com/schrottii/examplemod'>link to the repo here</a>"),
     new News(22, "SC2FMFR on galaxy", "October 17th - On Monday, SC2FMFR was updated to version 3.4. Now, the game is also available on the idle game website galaxy! This lets more people find and play the game, and potentially branch out to my other games or my server. It has already accumulated 14 ❤️, 266 plays, 161 hours of playtime, 4.5 stars and several comments - this is some of the most attention my games have ever received, and it seems like people are enjoying it. It's encouraging me to do more idle stuff, and step up my game. Thank you! <a href='https://galaxy.click/play/474'>SC2FMFR on galaxy link</a>"),
     new News(23, "CombCalc v1.2", "October 17th - CombCalc has been updated to version 1.2! Interestingly, this version's new calculator is not related to the Global Challenge or any tokens: It's the More Scrap Calc - used to calculate the appropriate level for the More Scrap Book upgrade. It's annoying to do this formula by hand, so having it integrated here will be useful for many people. This has been kind of planned from the start: CombCalc will be used for all kinds of SC2 calcs, not just GC stuff."),
+    new News(24, "Website v1.5", "October 18th - The biggest website update is here! I have overhauled the design: introducing a good-looking new top navigation with a moon button to disable it, a clean color palette, better readability, new fonts, and more. I also rewrote or changed most texts and game images, and added a donate button and flags of the non-programming languages that I speak. Organization has been improved and auto ads have been removed. Enjoy!")
 ]
 
 renderNews();
