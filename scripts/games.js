@@ -88,6 +88,16 @@ const games = {                                   // we are not at 3.1 yet :p
         links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download']],
         info: ["active", "Active (2024-)", "Minecraft mod", "3/5"],
     }),
+    examplemod: new Game("Example Mod", "1.0", "examplemod.png", {
+        desc: "An example mod for Minecraft 1.18.2. It does not really contain any content, but rather the generic mod structure and examples for blocks, items and recipes. Speeds up the process of starting a new mod. (2024)",
+        links: [['https://github.com/schrottii/examplemod', 'Github page']],
+        info: ["done", "Done (2024)", "Minecraft mod", "2/5"],
+    }),
+    wggj: new Game("WGGJ", "1.0", "wggj.png", {
+        desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
+        links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example']],
+        info: ["active", "Active (2024-)", "Framework", "3/5"],
+    }),
 }
 
 renderGames();
