@@ -47,13 +47,13 @@ function renderGames() {
 }
 
 // List of games, edit here
-const games = {                                   // we are not at 3.1 yet :p
-    shgabbClicker: new Game("Shgabb Clicker", "3.0.1", "shgabb_clicker.png", {
+const games = {
+    shgabbClicker: new Game("Shgabb Clicker", "3.2", "shgabb_clicker.png", {
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
     }),
-    toastyBird: new Game("Toasty Bird", "1.3.1", "toasty_bird.png", {
+    toastyBird: new Game("Toasty Bird", "1.3.2", "toasty_bird.png", {
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
         info: ["active", "Active (2024-)", "Action", "4/5"],
@@ -61,7 +61,12 @@ const games = {                                   // we are not at 3.1 yet :p
     sc2fmfr: new Game("SC2FMFR", "3.4", "sc2fmfr.png", {
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>, based on the original Scrap Clicker 2. It is by far the biggest and best mod of that game, it's basically its own game at this point. It takes weeks to complete. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/ucnytgkfnjbmloy/sc2fmfr-3.4.apk/file', '3.4 APK Download (Toast)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
-        info: ["done", "Done (2021-2023)", "Idle", "4/5"],
+        info: ["done", "Done (2021-2022)", "Idle", "4/5"],
+    }),
+    rainCollector: new Game("Rain Collector", "1.0", "rain_collector.png", {
+        desc: "Rain Collector is my latest release: an idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
+        links: [['https://schrottii.github.io/rain-collector/', 'Play Online']],
+        info: ["active", "Active (2024-)", "Idle", "3/5"],
     }),
     nameMixer: new Game("Barrel Name Mixer", "1.7", "barrelnamemixer.png", {
         desc: "This tool/game lets you combine barrels from Scrap Clicker 2. Their names and images get mixed. There are a few different ways to mix them, and favorites can be saved. (2022-)",
