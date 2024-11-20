@@ -48,7 +48,7 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.2", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.2.1", "shgabb_clicker.png", {
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
@@ -63,7 +63,7 @@ const games = {
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/ucnytgkfnjbmloy/sc2fmfr-3.4.apk/file', '3.4 APK Download (Toast)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["done", "Done (2021-2022)", "Idle", "4/5"],
     }),
-    rainCollector: new Game("Rain Collector", "1.0", "rain_collector.png", {
+    rainCollector: new Game("Rain Collector", "1.1.1", "rain_collector.png", {
         desc: "Rain Collector is my latest release: an idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
         links: [['https://schrottii.github.io/rain-collector/', 'Play Online']],
         info: ["active", "Active (2024-)", "Idle", "3/5"],
