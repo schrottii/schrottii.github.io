@@ -48,7 +48,7 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.2.1", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.3", "shgabb_clicker.png", {
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
@@ -73,7 +73,7 @@ const games = {
         links: [['https://schrottii.github.io/barrelnames/', 'Play Online']],
         info: ["semiactive", "Semi-Active (2022-)", "Tools", "3/5"],
     }),
-    quoteQuiz: new Game("QuoteQuiz", "1.3", "quotequiz.png", {
+    quoteQuiz: new Game("QuoteQuiz", "1.4.2", "quotequiz.png", {
         desc: "QuoteQuiz, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? 75+ questions. If you are not part of the Toast community, it's probably pretty hard to play. (2023-)",
         links: [['https://schrottii.github.io/quotequiz/', 'Play Online']],
         info: ["semiactive", "Semi-Active (2023-)", "Quiz", "3/5"],
