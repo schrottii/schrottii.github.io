@@ -63,7 +63,7 @@ const games = {
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/ucnytgkfnjbmloy/sc2fmfr-3.4.apk/file', '3.4 APK Download (Toast)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["done", "Done (2021-2022)", "Idle", "4/5"],
     }),
-    rainCollector: new Game("Rain Collector", "1.1.1", "rain_collector.png", {
+    rainCollector: new Game("Rain Collector", "1.2.1", "rain_collector.png", {
         desc: "Rain Collector is my latest release: an idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
         links: [['https://schrottii.github.io/rain-collector/', 'Play Online']],
         info: ["active", "Active (2024-)", "Idle", "3/5"],
@@ -73,7 +73,7 @@ const games = {
         links: [['https://schrottii.github.io/barrelnames/', 'Play Online']],
         info: ["semiactive", "Semi-Active (2022-)", "Tools", "3/5"],
     }),
-    quoteQuiz: new Game("QuoteQuiz", "1.4.2", "quotequiz.png", {
+    quoteQuiz: new Game("QuoteQuiz", "1.5", "quotequiz.png", {
         desc: "QuoteQuiz, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? 75+ questions. If you are not part of the Toast community, it's probably pretty hard to play. (2023-)",
         links: [['https://schrottii.github.io/quotequiz/', 'Play Online']],
         info: ["semiactive", "Semi-Active (2023-)", "Quiz", "3/5"],
@@ -88,7 +88,7 @@ const games = {
         links: [['https://schrottii.github.io/combcalc/', 'Use Online']],
         info: ["active", "Active (2024-)", "Tools", "3/5"],
     }),
-    fisecraft: new Game("Fisecraft", "1.1", "fisecraft.png", {
+    fisecraft: new Game("Fisecraft", "1.2", "fisecraft.png", {
         desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, mobs, some food, some teleportation items and more. It adds 78 recipes, 33 blocks, 33 items, 4 mobs (1 boss) and 2 structures. (2024-)",
         links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download']],
         info: ["active", "Active (2024-)", "Minecraft mod", "3/5"],
