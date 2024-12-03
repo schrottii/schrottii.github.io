@@ -48,7 +48,7 @@ function renderGames() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.3", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.3.1", "shgabb_clicker.png", {
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki']],
         info: ["active", "Active (2023-)", "Idle", "4/5"],
@@ -81,9 +81,9 @@ const games = {
     idleBar: new Game("Idle Bar", "1.6.9", "idle_bar.png", {
         desc: "Idle Bar was my first proper webgame, co-deved with someone else who offered and integrated access to a server, which granted this game unique features like ingame leaderboards and server-side saves. About 5 currencies, about 20 upgrades, about 50 trophies, Quests and more. The full version is not available anymore due to the lack of a server. However, since March 2024, a lite version without the server features is available! (2020-2022)",
         links: [['https://schrottii.github.io/idle-bar-lite/', 'Play Online (Lite)'], ['https://idle-bar.fandom.com/wiki/Idle_Bar_Wiki', 'Wiki']],
-        info: ["done", "Done (2020-2022)", "Idle", "3/5"],
+        info: ["done", "Done (2020-2022)", "Idle", "2/5"],
     }),
-    combCalc: new Game("CombCalc", "1.2", "combcalc.png", {
+    combCalc: new Game("CombCalc", "1.3", "combcalc.png", {
         desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2. It tells you the status of the Global Challenge, and offers various calculators. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online']],
         info: ["active", "Active (2024-)", "Tools", "3/5"],
@@ -98,7 +98,7 @@ const games = {
         links: [['https://github.com/schrottii/examplemod', 'Github page']],
         info: ["done", "Done (2024)", "Minecraft mod", "2/5"],
     }),
-    wggj: new Game("WGGJ", "1.0", "wggj.png", {
+    wggj: new Game("WGGJ", "1.1", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example']],
         info: ["active", "Active (2024-)", "Framework", "3/5"],
