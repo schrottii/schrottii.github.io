@@ -48,10 +48,12 @@ class Game {
     }
 
     getInfo(info) {
+        // gets the state of an info segment utilizing the infoContent list
         return this.info[infoContent.indexOf(info)];
     }
 
     filter(info) {
+        // filters based on if this game's info is the same as the filter setting is set to
         return gamesFilters[info] == "all" || gamesFilters[info] == this.getInfo(info);
     }
 
@@ -140,7 +142,7 @@ const games = {
     sc2fmfr: new Game("SC2FMFR", "3.5.1", "sc2fmfr.png", {
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>, based on the original Scrap Clicker 2. It is by far the biggest and best mod of that game, it's basically its own game at this point. It takes weeks to complete. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/ucnytgkfnjbmloy/sc2fmfr-3.4.apk/file', '3.4 APK Download (Toast)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
-        info: ["semiactive", "Done (2021-2022)", "game", "Idle", 4],
+        info: ["semiactive", "Semi-Active (2021-2022, 2023+)", "game", "Idle", 4],
     }),
     rainCollector: new Game("Rain Collector", "1.2.1", "rain_collector.png", {
         desc: "Rain Collector is my latest release: an idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
