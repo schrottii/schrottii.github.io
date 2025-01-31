@@ -138,7 +138,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.4.6", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.4.7", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -198,7 +198,7 @@ const games = {
         links: [['https://github.com/schrottii/examplemod', 'Github page']],
         info: ["done", "Done (2024)", "minecraft", "Minecraft mod", 2],
     }),
-    wggj: new Game("WGGJ", "1.1.1", "wggj.png", {
+    wggj: new Game("WGGJ", "1.2.1", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
         info: ["active", "Active (2024-)", "tool", "Framework", 3],
