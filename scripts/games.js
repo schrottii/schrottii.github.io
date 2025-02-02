@@ -138,7 +138,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.4.7", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.4.8", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -158,7 +158,7 @@ const games = {
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/agtmsjhnavlknjm/sc2fmfr-3.5.1.apk/file', '3.5.1 APK Download (Mediafire)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["semiactive", "Semi-Active (2021-2022, 2023+)", "game", "Idle", 4],
     }),
-    rainCollector: new Game("Rain Collector", "1.5", "rain_collector.png", {
+    rainCollector: new Game("Rain Collector", "1.5.1", "rain_collector.png", {
         git: "rain-collector",
         desc: "Rain Collector is my latest release: an idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
         links: [['https://schrottii.github.io/rain-collector/', 'Play Online'], ['https://schrottii.github.io/rain-collector/patch-notes.txt', 'All Updates']],
