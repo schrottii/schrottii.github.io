@@ -145,20 +145,20 @@ const games = {
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki'], ['https://galaxy.click/play/488', 'Play on galaxy'], ['https://schrottii.github.io/shgabb-clicker/patch-notes.txt', 'All Updates']],
         info: ["active", "Active (2023-)", "game", "Idle", 4],
     }),
-    toastyBird: new Game("Toasty Bird", "1.4.2", "toasty_bird.png", {
+    toastyBird: new Game("Toasty Bird", "1.5", "toasty_bird.png", {
         git: "toasty-bird",
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
         info: ["active", "Active (2024-)", "game", "Action", 4],
     }),
-    sc2fmfr: new Game("SC2FMFR", "3.5.1", "sc2fmfr.png", {
+    sc2fmfr: new Game("SC2FMFR", "3.6.1", "sc2fmfr.png", {
         git: "sc2fmfr",
         galaxy: 474,
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>, based on the original Scrap Clicker 2. It is by far the biggest and best mod of that game, it's basically its own game at this point. It takes weeks to complete. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/agtmsjhnavlknjm/sc2fmfr-3.5.1.apk/file', '3.5.1 APK Download (Mediafire)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["semiactive", "Semi-Active (2021-2022, 2023+)", "game", "Idle", 4],
     }),
-    rainCollector: new Game("Rain Collector", "1.5.1", "rain_collector.png", {
+    rainCollector: new Game("Rain Collector", "1.5.2", "rain_collector.png", {
         git: "rain-collector",
         desc: "Rain Collector is my latest release: an idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
         links: [['https://schrottii.github.io/rain-collector/', 'Play Online'], ['https://schrottii.github.io/rain-collector/patch-notes.txt', 'All Updates']],
