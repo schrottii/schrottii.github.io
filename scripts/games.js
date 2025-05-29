@@ -138,19 +138,21 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.5.3", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.6.1", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
         links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki'], ['https://galaxy.click/play/488', 'Play on galaxy'], ['https://schrottii.github.io/shgabb-clicker/patch-notes.txt', 'All Updates']],
         info: ["active", "Active (2023-)", "game", "Idle", 4],
     }),
+
     screwedSquares: new Game("Screwed Squares", "1.0", "screwed_squares.png", {
         git: "screwed-squares",
         desc: "My latest game is simple: you click the Screws in the right order to get rid of the Squares. How long can you survive, how many points can you get? (2025-)",
         links: [['https://schrottii.github.io/screwed-squares/', 'Play Online']],
         info: ["active", "Active (2025-)", "game", "Action", 3],
     }),
+
     sc2fmfr: new Game("SC2FMFR", "3.6.1", "sc2fmfr.png", {
         git: "sc2fmfr",
         galaxy: 474,
@@ -158,52 +160,61 @@ const games = {
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/agtmsjhnavlknjm/sc2fmfr-3.5.1.apk/file', '3.5.1 APK Download (Mediafire)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["semiactive", "Semi-Active (2021-2022, 2023+)", "game", "Idle", 4],
     }),
-    rainCollector: new Game("Rain Collector", "1.7", "rain_collector.png", {
+
+    rainCollector: new Game("Rain Collector", "1.8.2", "rain_collector.png", {
         git: "rain-collector",
         desc: "An idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
         links: [['https://schrottii.github.io/rain-collector/', 'Play Online'], ['https://schrottii.github.io/rain-collector/patch-notes.txt', 'All Updates']],
         info: ["active", "Active (2024-)", "game", "Idle", 3],
     }),
+
     toastyBird: new Game("Toasty Bird", "1.5", "toasty_bird.png", {
         git: "toasty-bird",
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
         info: ["active", "Active (2024-)", "game", "Action", 4],
     }),
-    nameMixer: new Game("Barrel Name Mixer", "1.9", "barrelnamemixer.png", {
+
+    nameMixer: new Game("Barrel Name Mixer", "2.0", "barrelnamemixer.png", {
         git: "barrelnames",
-        desc: "This tool/game lets you combine barrels from Scrap Clicker 2. Their names and images get mixed. There are a few different ways to mix them, and favorites can be saved. (2022-)",
+        desc: "This tool/game lets you combine barrels from Scrap Clicker 2. Their names and images get mixed. There are a few different ways to mix them, and favorites can be saved. See the barrels you have found in the Barrel Book and combine the ones you want to see! (2022-2025)",
         links: [['https://schrottii.github.io/barrelnames/', 'Play Online'], , ['https://schrottii.github.io/barrelnames/patch-notes.html', 'All Updates']],
-        info: ["semiactive", "Semi-Active (2022-)", "tool", "Tools", 3],
+        info: ["done", "Done (2022-2025)", "tool", "Tools", 4],
     }),
+
     quoteQuiz: new Game("QuoteQuiz", "1.5.1", "quotequiz.png", {
         git: "quotequiz",
         desc: "QuoteQuiz, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? 75+ questions. If you are not part of the Toast community, it's probably pretty hard to play. (2023-)",
         links: [['https://schrottii.github.io/quotequiz/', 'Play Online'], ['https://schrottii.github.io/quotequiz/patchnotes.txt', 'All Updates']],
-        info: ["semiactive", "Semi-Active (2023-)", "game", "Quiz", 3],
+        info: ["semiactive", "Semi-Active (2023-)", "game", "Quiz", 2],
     }),
+
     idleBar: new Game("Idle Bar", "1.6.9", "idle_bar.png", {
         git: "idle-bar-lite",
         desc: "Idle Bar was my first proper webgame, co-deved with someone else who offered and integrated access to a server, which granted this game unique features like ingame leaderboards and server-side saves. About 5 currencies, about 20 upgrades, about 50 trophies, Quests and more. The full version is not available anymore due to the lack of a server. However, since March 2024, a lite version without the server features is available! (2020-2022)",
         links: [['https://schrottii.github.io/idle-bar-lite/', 'Play Online (Lite)'], ['https://idle-bar.fandom.com/wiki/Idle_Bar_Wiki', 'Wiki']],
         info: ["done", "Done (2020-2022)", "game", "Idle", 2],
     }),
-    combCalc: new Game("CombCalc", "1.4", "combcalc.png", {
+
+    combCalc: new Game("CombCalc", "1.4.1", "combcalc.png", {
         git: "combcalc",
         desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2. It tells you the status of the Global Challenge, and offers various calculators. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online'], ['https://schrottii.github.io/combcalc/patch-notes.txt', 'All Updates']],
         info: ["active", "Active (2024-)", "tool", "Tools", 3],
     }),
-    fisecraft: new Game("Fisecraft", "1.2", "fisecraft.png", {
+
+    fisecraft: new Game("Fisecraft", "1.3", "fisecraft.png", {
         desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, mobs, some food, some teleportation items and more. It adds 78 recipes, 33 blocks, 33 items, 4 mobs (1 boss) and 2 structures. (2024-)",
         links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download'], ["https://modrinth.com/mod/fisecraft", "Modrinth"]],
         info: ["active", "Active (2024-)", "minecraft", "Minecraft mod", 3],
     }),
+
     examplemod: new Game("Example Mod", "1.0", "examplemod.png", {
         desc: "An example mod for Minecraft 1.18.2. It does not really contain any content, but rather the generic mod structure and examples for blocks, items and recipes. Speeds up the process of starting a new mod. (2024)",
         links: [['https://github.com/schrottii/examplemod', 'Github page']],
         info: ["done", "Done (2024)", "minecraft", "Minecraft mod", 2],
     }),
+
     wggj: new Game("WGGJ", "1.3", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
