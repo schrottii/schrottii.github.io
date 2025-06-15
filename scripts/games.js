@@ -29,14 +29,14 @@ class Game {
             ren = ren + `</h3></div>`;
         }
         if (this.info != undefined) {
-            ren = ren + "<hr><div style='font-size: 24px; display: table;'><div style='display: table-cell; width: 10%;'><img src='images/gameinfo/"
+            ren = ren + "<hr><div style='font-size: 16px; display: table;'><div style='display: table-cell; width: 10%;'><img src='images/gameinfo/"
                 + this.getInfo("activity") + ".png'>" + this.getInfo("activity2")
                 + "</div><div style='display: table-cell; width: 10%;'>" + this.renderGenre()
                 + "</div><div style='display: table-cell; width: 10%;'>" + this.renderRating()
                 + "</div></div>";
         }
         if (settings.playtype != 0 && this.git != undefined) { // direct play, don't show it if disabled or this is not a playable game/app
-            ren = ren + "<hr><button style='min-width: 20%; min-height: 64px; font-size: 40px' onclick='handleDirectPlay(`" + this.links[0][0] + "`, `" + this.git + "`, `" + this.galaxy + "`)'>"
+            ren = ren + "<hr><button style='min-width: 20%; min-height: 48px; font-size: 32px' onclick='handleDirectPlay(`" + this.links[0][0] + "`, `" + this.git + "`, `" + this.galaxy + "`)'>"
                 + `<img src="images/gameinfo/play.png" height=32px /> `
                 + (settings.playtype == 2 && this.galaxy != undefined ? "G A L A X Y" : "P L A Y") + "</button>";
         }
@@ -138,7 +138,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.6.1", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.6.2", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -146,18 +146,11 @@ const games = {
         info: ["active", "Active (2023-)", "game", "Idle", 4],
     }),
 
-    screwedSquares: new Game("Screwed Squares", "1.0", "screwed_squares.png", {
-        git: "screwed-squares",
-        desc: "My latest game is simple: you click the Screws in the right order to get rid of the Squares. How long can you survive, how many points can you get? (2025-)",
-        links: [['https://schrottii.github.io/screwed-squares/', 'Play Online']],
-        info: ["active", "Active (2025-)", "game", "Action", 3],
-    }),
-
     sc2fmfr: new Game("SC2FMFR", "3.6.1", "sc2fmfr.png", {
         git: "sc2fmfr",
         galaxy: 474,
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>, based on the original Scrap Clicker 2. It is by far the biggest and best mod of that game, it's basically its own game at this point. It takes weeks to complete. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
-        links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/agtmsjhnavlknjm/sc2fmfr-3.5.1.apk/file', '3.5.1 APK Download (Mediafire)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
+        links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/oi6i8vi7domjs05/sc2fmfr-3.6.1.apk/file', '3.6.1 APK Download (Mediafire)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["semiactive", "Semi-Active (2021-2022, 2023+)", "game", "Idle", 4],
     }),
 
@@ -173,6 +166,13 @@ const games = {
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
         info: ["active", "Active (2024-)", "game", "Action", 4],
+    }),
+
+    screwedSquares: new Game("Screwed Squares", "1.0", "screwed_squares.png", {
+        git: "screwed-squares",
+        desc: "My latest game is simple: you click the Screws in the right order to get rid of the Squares. How long can you survive, how many points can you get? (2025-)",
+        links: [['https://schrottii.github.io/screwed-squares/', 'Play Online']],
+        info: ["active", "Active (2025-)", "game", "Action", 3],
     }),
 
     nameMixer: new Game("Barrel Name Mixer", "2.0", "barrelnamemixer.png", {

@@ -18,6 +18,17 @@ function settingPlayType() {
     updateSettings();
 }
 
+function hideTopNavigation() {
+    document.getElementById("topNavigation").style.display = "none";
+    document.getElementById("megaLeft").style.display = "none";
+    document.getElementById("megaRight").style.width = "100%";
+}
+function showTopNavigation() {
+    document.getElementById("topNavigation").style.display = "";
+    document.getElementById("megaLeft").style.display = "";
+    document.getElementById("megaRight").style.width = "75%";
+}
+
 function handleDirectPlay(directPlay, gameGit, gameGalaxy) {
     // Function to handle the direct play button
     // directPlay -> gathered from the first link, usually a link to the game's main website hosted on github, used for "Online" type
@@ -64,7 +75,38 @@ function updateSettings() {
 if (localStorage["SchrottiiWebsite"] != undefined) {
     settings = JSON.parse(localStorage.getItem("SchrottiiWebsite"));
 }
-updateSettings();
 
-renderGames();
-renderGamesFilters();
+var clist = [
+    ["Top", "top"],
+    ["Games & Apps", "gamesRender"],
+    ["News", "newsRender"],
+    ["About Me", "aboutMe"],
+    ["Website Info", "websiteInfo"],
+    ["Discord", "discordServers"],
+    ["Settings", "settings"],
+];
+
+function teleport(loc){
+    location.href= '#' + loc;
+}
+
+function renderContentList(){
+    let render = "<h3>Content:</h3>";
+
+    for (let c in clist){
+        render = render + "<br /><button style='background-color: black; border-color: red; width: 90%' onclick='teleport(`" + clist[c][1] + "`)'>" + clist[c][0] + "</button>";
+    }
+
+    document.getElementById("contentList").innerHTML = render;
+}
+
+function updateUI() {
+    updateSettings();
+
+    renderContentList();
+    renderGames();
+    renderGamesFilters();
+}
+
+updateUI();
+teleport("top");

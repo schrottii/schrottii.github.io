@@ -3,8 +3,9 @@
     #170217   Dark purple
     #420042   Russian violet
     #FDB1E4   Lavender pink
-    #5C3700   Sepia
+    #7A2C68   Warm mauve
     #FCF988   Icterine
+    #F2EAF3   White
     #FFFFFF   White
 */
 
@@ -20,24 +21,36 @@
 
 /* basic stuff */
 
-body, h1, h2, h3, a {
+body,
+h1,
+h2,
+h3,
+a {
     text-align: center;
     z-index: 2;
-    color: white;
+    color: #F2EAF3;
     margin-top: 6px;
     margin-bottom: 4px;
 }
 
-h1, h2, h3, h4, h5, h6, header {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
     font-family: header;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0;
     overflow-x: hidden;
     font-family: text;
+    font-size: 12px;
 }
 
 html {
@@ -55,19 +68,31 @@ a {
 }
 
 button {
-    background-color: #5C3700;
-    color: #FCF988;
+    background-color: #7A2C68;
+    color: #F2EAF3;
     margin: 2px 6px 2px 6px;
     min-width: 60px;
     min-height: 32px;
 }
 
+
+
 /* my stuff */
+.megaLeft {
+    float: left;
+    width: 25%;
+}
+
+.megaRight {
+    float: right;
+    width: 75%;
+}
+
 .gameDiv {
     text-align: center;
-    margin-left: 6%;
-    margin-right: 6%;
-    max-width: 88%;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 94%;
     opacity: 0.8;
     background-color: #420042;
     border: thick #FDB1E4;
@@ -77,19 +102,19 @@ button {
 
 @media only screen and (min-width: 768px) {
     .gameDiv {
-        margin-left: 20%;
-        margin-right: 20%;
-        max-width: 60%;
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
     }
 }
 
-.gameImg{
+.gameImg {
     text-align: left;
     height: 64px;
     width: 64px;
 }
 
-.command{
+.command {
     background-color: black;
     color: limegreen;
     min-width: 96%;
@@ -107,21 +132,21 @@ button {
 }
 
 .topNavigation {
-    position: fixed;
     top: 0;
     width: 100%;
     height: 8%;
     z-index: 10;
-    background-color: rgb(253, 177, 228, 0.5); /* FDB1E4 */
+    background-color: rgb(253, 177, 228, 0.5);
+    /* FDB1E4 */
     border-bottom: 8px groove;
     border-color: #FCF988;
     color: #170217;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 1200px) {
     .topNavigation {
-        font-size: 32px;
+        font-size: 20px;
     }
 }
 
@@ -152,8 +177,7 @@ button {
 
 .topName {
     float: left;
-    vertical-align: middle;
-    max-width: 10%;
+    max-width: 40%;
 }
 
 @media only screen and (min-width: 1200px) {

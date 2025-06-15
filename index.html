@@ -1,117 +1,173 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Schrottii</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+    <top id="top"></top>
     <div id="particles-js"></div>
     <br /><br />
-    <br /><br />
-    <h1>Schrottii</h1>
 
-    <!-- TOP NAVIGATION - STATIC -->
+    <!-- Left SIDE -->
     <img src="images/moon.png" style="position: fixed; top: 0%; left: 0%; height: 8%;" onclick="showTopNavigation()" />
-    <div class="topNavigation" id="topNavigation">
-        <img src="images/moon.png" style="float: left; height: 100%;" onclick="hideTopNavigation()" />
-        <p class="topName" id="schrottiisGamesTitle">Schrottii's Games</p>
+    <megadiv class="megaLeft" id="megaLeft">
+        <div style="position: fixed; width: 25%">
+    
+            <div class="topNavigation" id="topNavigation">
+                <img src="images/moon.png" style="position: fixed; top: 0%; left: 0%; height: 8%;" onclick="hideTopNavigation()" />
+                <p class="topName" id="schrottiisGamesTitle">Schrottii's Games</p>
+            </div>
+            <br style="clear: both" />
 
-        <button class="topButton" style="left: 55%;" onclick="location.href='#gamesRender'" type="button">Games</button>
-        <button class="topButton" style="left: 70%;" onclick="location.href='#newsRender'" type="button">News</button>
-        <button class="topButton" style="left: 85%;" onclick="location.href='#other'" type="button">Other</button>
-    </div>
+            <span id="contentList"></span>
+        </div>
+    </megadiv>
 
-    <!-- GAMES SECTION -->
-    <h1>My Games & Apps</h1>
-    <div id="gamesFiltersRender"></div>
-    <div id="gamesRender"></div>
+    <!-- RIGHT SIDE -->
+    <megadiv class="megaRight" id="megaRight">
+        <h1>Schrottii</h1>
 
-    <!-- NEWS SECTION -->
-    <h1>News</h1>
-    <div id="newsRender"></div>
+        <!-- GAMES SECTION -->
+        <h1>My Games & Apps</h1>
+        <div id="gamesFiltersRender"></div>
+        <div id="gamesRender"></div>
 
-    <!-- INFO, ABOUT ME, LINKS -->
-    <h1>Other</h1>
-    <div class="gameDiv" id="other">
-        <h2>About Me:</h2>
-        <img src="images/moon.png" class="gameImg" style="float: right" />
-        I'm a young female programmer from Germany who makes some fun idle games and other projects in her free time, for free! I enjoy updating my projects, expanding them, following the bigger vision, releasing many updates, but they always contain interesting content. Quantity and quality! I love interacting with the players, giving advice, seeing them discuss my games and playing the games myself. <br />
-        I am also an artist (image editing, pixel art, game sprites and more). I also really like wikis and playing games. Nowadays I am a calm and friendly person, I am almost never mad, angry or sad. The best way to contact me is via Discord.<br />
-        <br /><br /><hr />
+        <!-- NEWS SECTION -->
+        <h1>News</h1>
+        <div id="newsRender"></div>
 
-        <h2>Donate:</h2>
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-        <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#170217', 'Y8Y2XMZX1'); kofiwidget2.draw();</script>
-        <br /> <hr />
+        <!-- INFO, ABOUT ME, LINKS -->
+        <h1>Other</h1>
+        <div class="gameDiv" id="aboutMe">
+            <h2>About Me:</h2>
+            <img src="images/moon.png" class="gameImg" style="float: right" />
+            I'm a young female programmer from Germany who makes some fun games and other projects in her free
+            time, for free! I enjoy updating my projects, expanding them, following the bigger vision, releasing many
+            updates, but they always contain interesting content. Quantity and quality! I like interacting with the
+            players, giving advice, seeing them discuss my games and playing the games myself. <br />
+            
+            I am also an artist (image editing, pixel art, game sprites and more). I also really like wikis and playing
+            games. I have been through a lot but will keep providing content and keep going. The best way to contact me is via Discord.<br />
+            <br /><br />
+            <hr />
 
-        <h3>My languages:</h3>
-        <span style="color: black; background-color: orangered" class="lang">HTML</span>  <span style="color: black; background-color: yellow" class="lang">JS</span>  <span style="color: white; background-color: mediumpurple" class="lang">CSS</span>  <span style="color: black; background-color: yellow" class="lang">Batchfile</span>  <span style="color: white; background-color: cornflowerblue" class="lang">Py</span>
-        <br /><br />
-        <span style="color: black; background-color: indianred" class="lang">Wikitext</span>  <span style="color: white; background-color: royalblue" class="lang">Markdown</span>
-        <br /><br />
-        <span style="color: white; background-color: #af7219" class="lang">Java</span>  <span style="color: white; background-color: #178701" class="lang">C#</span>
-        <br /><br />
+            <br />
+            <img src="images/blinkies/blinkiesCafe-vH.gif" />
+            <img src="images/blinkies/blinkiesCafe-jE.gif" />
+            <img src="images/blinkies/0072-lesbian.gif" />
+            <img src="images/blinkies/0093-cats.gif" />
+            <img src="images/blinkies/0114-tbh.gif" />
+            <img src="images/blinkies/0123-glitterpink.gif" />
+            <img src="images/blinkies/blinkies-ancientinternetcreature.gif" />
+            <img src="images/blinkies/blinkiesCafe-En.gif" />
 
-        <img src="images\flags\germany.png" />
-        <img src="images\flags\usa.png" />
-        <img src="images\flags\rome.png" />
-        <img src="images\flags\china.png" />
+            <br /><br />
+            <hr />
 
-        <br /><hr />
+            <h2>Donate:</h2>
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+            <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#170217', 'Y8Y2XMZX1'); kofiwidget2.draw();</script>
+            <br />
+            <hr />
 
-        <h3>Contact me:</h3>
-        Discord username: <span style="background-color: white; color: black">schrottii</span><br />
-        YouTube: <a href="https://www.youtube.com/channel/UC7qnN9M1_PUqmrgOHQipC2Q" style="background-color: white; color: black">Schrottii</a>
-        <br /><br /><hr />
+            <h3>My languages:</h3>
+            <span style="color: black; background-color: orangered" class="lang">HTML</span>
+            <span style="color: white; background-color: mediumpurple" class="lang">CSS</span>
+            <span style="color: black; background-color: yellow" class="lang">JS</span>
+            <br /><br />
+            <span style="color: white; background-color: cornflowerblue" class="lang">Py</span>
+            <span style="color: white; background-color: #af7219" class="lang">Java</span>
+            <span style="color: white; background-color: #178701" class="lang">C#</span>
+            <br /><br />
 
-        <h3>More:</h3>
-        <a href="privacy.html">Privacy Policy</a> <br />
-        <a href="restore-savegames.html">Restoring old host saves</a>
-        <br /><br /><hr />
+            <span style="color: black; background-color: yellow" class="lang">Batchfile</span>
+            <span style="color: black; background-color: indianred" class="lang">Wikitext</span>
+            <span style="color: white; background-color: royalblue" class="lang">Markdown</span>
+            <br /><br />
 
-        <h3>Cool pages:</h3>
-        (External links - not mine!) <br />
-        <a href="https://github.com/ozh/github-colors">Github colors by Ozh</a> <br />
-        <a href="https://www.markdownguide.org/getting-started/">Markdown guide</a> <br />
-        <a href="https://r.3v.fi/discord-timestamps/">Discord timestamp generator</a> <br />
-        <a href="https://coolors.co/">Color palettes</a> <br />
-        <a href="https://flagdownload.com/">Flags</a> <br />
-        <br />
-    </div>
+            <img src="images\flags\germany.png" />
+            <img src="images\flags\usa.png" />
+            <img src="images\flags\rome.png" />
+            <img src="images\flags\china.png" />
 
-    <!-- INFO ABOUT THE WEBSITE -->
-    <div class="gameDiv">
-        <h2>This Website: v1.9</h2>
-        This website presents my games, apps, other projects, and shares some info about myself. There is also a news section, invites to my servers, and more. I try to keep the game versions and news section up-to-date. Every now and then the website gets changed a bit.
-    </div>
+            <br />
+            <hr />
 
-    <!-- DISCORD SERVERS -->
-    <div class="gameDiv">
-        <h2>Schrottii's Games</h2>
-        <img src="images/servers/wizard.png" class="gameImg" />
-        <button><a href="https://discord.gg/CbBeJXKUrk">Click here to join!</a></button><br />
-        Schrottii's Games is my Discord server, it is dedicated to my games and other work! You have at least one channel for each game here and people to discuss them with. I am, of course, very active in here. It's well moderated and safe.
-    </div>
-    <div class="gameDiv">
-        <h2>Toast</h2>
-        <img src="images/servers/toast-pic-by-tpot-square.jpg" class="gameImg" />
-        <button><a href="https://discord.gg/3T4CBmh">Click here to join!</a></button><br />
-        Toast is my Discord server that has been active since 2018, it offers a small weird community for talking about games, shitposting and having fun. It used to be the main place of discussion for most of my games, but the new server has taken that function. I am active in the server. Be warned, the members are not afraid to go pretty far with jokes and potentially post offensive content.
-    </div>
+            <h3>Contact me:</h3>
+            Discord username: <span style="background-color: white; color: black">schrottii</span><br />
+            YouTube: <a href="https://www.youtube.com/channel/UC7qnN9M1_PUqmrgOHQipC2Q"
+                style="background-color: white; color: black">Schrottii</a>
+            <br /><br />
+            <hr />
 
-    <!-- SETTINGS -->
-    <h1>Settings</h1>
-    <div class="gameDiv">
-        <b>Direct Play</b> - adds buttons to quickly play a game <br />
-        <button onclick="settingPlayType()" id="settingPlayType">Direct Play: OFF</button> <br />
+            <h3>Cool pages:</h3>
+            (External links - not mine!) <br /><br />
+            <a href="https://github.com/ozh/github-colors">Github colors by Ozh</a> <br />
+            <a href="https://www.markdownguide.org/getting-started/">Markdown guide</a> <br />
+            <a href="https://r.3v.fi/discord-timestamps/">Discord timestamp generator</a> <br />
+            <a href="https://coolors.co/">Color palettes</a> <br />
+            <a href="https://flagdownload.com/">Flags</a> <br />
+            <a href="https://blinkies.cafe/">Blinkie Maker</a> <br />
+            <a href="https://omfg.neocities.org/graphics">More Blinkies</a> <br />
+            <br />
+        </div>
 
-        <b>Local Dir</b> - available if direct play is set to local. Use this if you have this website and the games saved on your device and prefer playing them locally. Use this to enter the path where they are saved. Games need to follow the repo names (e. g. "shgabb-clicker") <br />
-        <button onclick="settingLocalDir()" id="settingLocalDir" style="display: none"></button>
+        <!-- INFO ABOUT THE WEBSITE -->
+        <div class="gameDiv" id="websiteInfo">
+            <h2>This Website: v2.0</h2>
+            This website presents my games, apps, other projects, and myself. There is also a
+            news section, invites to my servers, and more. I try to keep the game versions and news section up-to-date.
+            Every now and then the website gets changed a bit.
 
-        <br /> Note: This website, just like my games, doesn't save or care about your personal data, only your settings/progress are saved.
-    </div>
+            <br />
+            <a href="privacy.html">Privacy Policy</a> <br />
+            <a href="restore-savegames.html">Restoring old host saves</a>
+        </div>
+
+        <!-- DISCORD SERVERS -->
+        <div class="gameDiv" id="discordServers">
+            For interactions I primarily prefer the communication service Discord. <br />
+
+            <h2>Schrottii's Games</h2>
+            <img src="images/servers/schrottiisgames.png" class="gameImg" />
+            <button><a href="https://discord.gg/CbBeJXKUrk">Click here to join!</a></button><br />
+            Schrottii's Games is my Discord server, dedicated to these games and other projects! There is at least one
+            channel for every game here and people to discuss them with. I am, of course, very active in here. It's well
+            moderated and safe, but more importantly, the best source for news and work-in-progress insights of upcoming content!
+
+            <br /><br />
+
+            <h2>Toast</h2>
+            <img src="images/servers/toast.png" class="gameImg" />
+            <button><a href="https://discord.gg/3T4CBmh">Click here to join!</a></button><br />
+            Toast is my community server that has been active since 2018, it offers a small weird community for talking
+            about other games, shitposting and having fun. It used to be the main place of discussion for most of my games,
+            but the new server has taken that function. I am active in the server. Be warned, the members are not afraid
+            to go pretty far with jokes and post potentially offensive content.
+        </div>
+
+        <!-- SETTINGS -->
+        <h1>Settings</h1>
+        <div class="gameDiv" id="settings">
+            <b>Direct Play</b> - adds buttons to quickly play a game <br />
+            <button onclick="settingPlayType()" id="settingPlayType">Direct Play: OFF</button> <br />
+
+            <b>Local Dir</b> - available if direct play is set to local. Use this if you have this website and the games
+            saved on your device and prefer playing them locally. Use this to enter the path where they are saved. Games
+            need to follow the repo names (e. g. "shgabb-clicker") <br />
+            <button onclick="settingLocalDir()" id="settingLocalDir" style="display: none"></button>
+
+            <br /> Note: This website, just like my games, doesn't save or care about your personal data, only your
+            settings/progress are saved.
+        </div>
+    </megadiv>
+
+
 
     <!-- LOAD SCRIPTS -->
     <script src="scripts\games.js"></script>
@@ -121,28 +177,17 @@
     <script src="particles\particles.js"></script>
     <script src="particles\app.js"></script>
 
-    <!-- GOOGLE ADSENSE - THIS IS THE ONLY WEBSITE USING IT -->
-    <script>
-        function hideTopNavigation() {
-            document.getElementById("topNavigation").style.display = "none";
-        }
-        function showTopNavigation() {
-            document.getElementById("topNavigation").style.display = "";
-        }
-    </script>
+    <!-- GOOGLE ADSENSE
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8311163069228619"
-            crossorigin="anonymous"></script>
-    <!-- main-ad -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-8311163069228619"
-         data-ad-slot="5072722722"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+        crossorigin="anonymous"></script>
+    
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8311163069228619" data-ad-slot="5072722722"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    -->
 
     <!-- CONSTANT KOFI OVERLAY -->
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
