@@ -26,8 +26,10 @@ class Game {
                     (this.links[lin][1].substr(0, 4) == "Play" ? `<img src="images/gameinfo/play.png" /> ` : ``)
                     + `<a href="` + this.links[lin][0] + `"><b>` + this.links[lin][1] + `</b></a></button>  `;
             }
-            ren = ren + `</h3></div>`;
+            ren = ren + `</h3>`;
         }
+        ren = ren + `</div>`;
+
         if (this.info != undefined) {
             ren = ren + "<hr><div style='font-size: 16px; display: table;'><div style='display: table-cell; width: 10%;'><img src='images/gameinfo/"
                 + this.getInfo("activity") + ".png'>" + this.getInfo("activity2")
@@ -99,6 +101,7 @@ function renderGames() {
     gamesRender.innerHTML = render;
 }
 
+// filters
 function renderGamesFilters() {
     let render = "<button onclick='toggleFilters()'>" + (showGameFilters ? "Hide" : "Show") + " Filters</button>   ";
 
@@ -106,16 +109,16 @@ function renderGamesFilters() {
         render = render + "Filter options:";
 
         render = render + "<br />Content types: ";
-        render = render + "<button onclick='gamesFilter(`type`, `all`)'>All types</button>";
-        render = render + "<button onclick='gamesFilter(`type`, `game`)'>Games</button>";
-        render = render + "<button onclick='gamesFilter(`type`, `tool`)'>Tools</button>";
-        render = render + "<button onclick='gamesFilter(`type`, `minecraft`)'>Minecraft mods</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["type"] == "all" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `all`)'>All types</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["type"] == "game" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `game`)'>Games</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["type"] == "tool" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `tool`)'>Tools</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["type"] == "minecraft" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `minecraft`)'>Minecraft mods</button>";
 
         render = render + "<br />Activity: ";
-        render = render + "<button onclick='gamesFilter(`activity`, `all`)'>All activities</button>";
-        render = render + "<button onclick='gamesFilter(`activity`, `active`)'>Active</button>";
-        render = render + "<button onclick='gamesFilter(`activity`, `semiactive`)'>Semi-Active</button>";
-        render = render + "<button onclick='gamesFilter(`activity`, `done`)'>Done</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "all" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `all`)'>All activities</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "active" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `active`)'>Active</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "semiactive" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `semiactive`)'>Semi-Active</button>";
+        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "done" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `done`)'>Done</button>";
 
         render = render + "<br /><br />";
     }
@@ -161,7 +164,7 @@ const games = {
         info: ["active", "Active (2024-)", "game", "Idle", 3],
     }),
 
-    toastyBird: new Game("Toasty Bird", "1.5", "toasty_bird.png", {
+    toastyBird: new Game("Toasty Bird", "1.5.1", "toasty_bird.png", {
         git: "toasty-bird",
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
@@ -172,7 +175,7 @@ const games = {
         git: "screwed-squares",
         desc: "My latest game is simple: you click the Screws in the right order to get rid of the Squares. How long can you survive, how many points can you get? (2025-)",
         links: [['https://schrottii.github.io/screwed-squares/', 'Play Online']],
-        info: ["active", "Active (2025-)", "game", "Action", 3],
+        info: ["semiactive", "Semi-Active (2025-)", "game", "Action", 3],
     }),
 
     nameMixer: new Game("Barrel Name Mixer", "2.0", "barrelnamemixer.png", {
@@ -182,11 +185,11 @@ const games = {
         info: ["done", "Done (2022-2025)", "tool", "Tools", 4],
     }),
 
-    quoteQuiz: new Game("QuoteQuiz", "1.5.1", "quotequiz.png", {
+    quoteQuiz: new Game("QuoteQuiz", "1.6", "quotequiz.png", {
         git: "quotequiz",
-        desc: "QuoteQuiz, released in December 2023, is a quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? 75+ questions. If you are not part of the Toast community, it's probably pretty hard to play. (2023-)",
+        desc: "QuoteQuiz, released in December 2023, is a niche quiz based on the quotes of the people of Toast and Scrap! Can you guessed who said these wise words? Can you get all trophies? 200 questions. If you are not part of the Toast community, it's probably pretty hard to play. The final update added a collection of quotes and many new modes to play. (2023-2025)",
         links: [['https://schrottii.github.io/quotequiz/', 'Play Online'], ['https://schrottii.github.io/quotequiz/patchnotes.txt', 'All Updates']],
-        info: ["semiactive", "Semi-Active (2023-)", "game", "Quiz", 2],
+        info: ["done", "Done (2023-2025)", "game", "Quiz", 2],
     }),
 
     idleBar: new Game("Idle Bar", "1.6.9", "idle_bar.png", {
@@ -196,28 +199,39 @@ const games = {
         info: ["done", "Done (2020-2022)", "game", "Idle", 2],
     }),
 
+    scrapRPG: new Game("ScrapRPG", "Coming soon", "scraprpg.png", {
+        desc: "ScrapRPG is my upcoming massive game! Development originally started with a team of around 12 people, but after severe complications and lack of contributions from others, it became my duty to finish it. It is planned to be released on August 13th, after almost 5 years.",
+        info: ["active", "In development (2021-2025)", "game", "RPG", 1]
+    }),
+
     combCalc: new Game("CombCalc", "1.4.1", "combcalc.png", {
         git: "combcalc",
         desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2. It tells you the status of the Global Challenge, and offers various calculators. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online'], ['https://schrottii.github.io/combcalc/patch-notes.txt', 'All Updates']],
-        info: ["active", "Active (2024-)", "tool", "Tools", 3],
-    }),
-
-    fisecraft: new Game("Fisecraft", "1.3", "fisecraft.png", {
-        desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, mobs, some food, some teleportation items and more. It adds 78 recipes, 33 blocks, 33 items, 4 mobs (1 boss) and 2 structures. (2024-)",
-        links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download'], ["https://modrinth.com/mod/fisecraft", "Modrinth"]],
-        info: ["active", "Active (2024-)", "minecraft", "Minecraft mod", 3],
-    }),
-
-    examplemod: new Game("Example Mod", "1.0", "examplemod.png", {
-        desc: "An example mod for Minecraft 1.18.2. It does not really contain any content, but rather the generic mod structure and examples for blocks, items and recipes. Speeds up the process of starting a new mod. (2024)",
-        links: [['https://github.com/schrottii/examplemod', 'Github page']],
-        info: ["done", "Done (2024)", "minecraft", "Minecraft mod", 2],
+        info: ["semiactive", "Semi-Active (2024-)", "tool", "Tools", 3],
     }),
 
     wggj: new Game("WGGJ", "1.3", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
         info: ["active", "Active (2024-)", "tool", "Framework", 3],
+    }),
+
+    fisecraft: new Game("Fisecraft", "1.3", "fisecraft.png", {
+        desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, mobs, some food, some teleportation items and more. It adds 78 recipes, 33 blocks, 33 items, 4 mobs (1 boss) and 2 structures. (2024-)",
+        links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download'], ["https://modrinth.com/mod/fisecraft", "Modrinth"]],
+        info: ["semiactive", "Semi-Active (2024-)", "minecraft", "Minecraft mod", 3],
+    }),
+
+    easydyes: new Game("Easy Dyes", "1.0", "easy_dyes_logo.png", {
+        desc: "Easy Dyes is a simple MC mod that adds a dye station that allows you to turn dyes into other dyes, making them easier to obtain in building-focused modpacks. (2025-)",
+        links: [['https://curseforge.com/minecraft/mc-mods/easy-dyes', 'Curseforge page'], ['https://curseforge.com/minecraft/mc-mods/easy-dyes/files/', 'Curseforge download']],
+        info: ["semiactive", "Semi-Active (2025-)", "minecraft", "Minecraft mod", 2],
+    }),
+
+    examplemod: new Game("Example Mod", "1.0", "examplemod.png", {
+        desc: "An example mod for Minecraft 1.18.2. It does not really contain any content, but rather the generic mod structure and examples for blocks, items and recipes. Speeds up the process of starting a new mod. (2024)",
+        links: [['https://github.com/schrottii/examplemod', 'Github page']],
+        info: ["done", "Done (2024)", "minecraft", "Minecraft mod", 2],
     }),
 }

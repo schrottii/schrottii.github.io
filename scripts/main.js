@@ -94,7 +94,7 @@ function renderContentList(){
     let render = "<h3>Content:</h3>";
 
     for (let c in clist){
-        render = render + "<br /><button style='background-color: black; border-color: red; width: 90%' onclick='teleport(`" + clist[c][1] + "`)'>" + clist[c][0] + "</button>";
+        render = render + "<br /><button style='background-color: black; border-color: red; width: 90%; font-size: 20px' onclick='teleport(`" + clist[c][1] + "`)'>" + clist[c][0] + "</button>";
     }
 
     document.getElementById("contentList").innerHTML = render;
@@ -107,6 +107,52 @@ function updateUI() {
     renderGames();
     renderGamesFilters();
 }
+
+document.getElementById("theForm").addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = {
+        text: document.getElementById('text').value,
+        author: document.getElementById('author').value,
+        fileName: document.getElementById("fileUpload").files[0]?.name
+    };
+    //console.log('Form data:', formData);
+
+    const webhookUrl = 'https://discord.com/api/webhooks/1396486582487220305/_BoKIhOl4tPtRVlCNxFu7B6WNytlOibM2LzuspPdI6b2o6YCC-RijvILrJifOckYCMsh';
+
+    try {
+        let discordData = new FormData();
+        let file = document.getElementById("fileUpload").files[0];
+
+        if (file) {
+            discordData.append('file', file);
+        }
+
+        discordData.append('payload_json', JSON.stringify({
+            content: formData.text + (formData.author != "" ? " - " + formData.author : ""),
+            /*embeds: [{
+                title: formData.text,
+                fields: [
+                    //{ name: 'One:', value: formData.name || 'x' },
+                    { name: 'Important: ', value: formData.author || 'y' },
+                    //{ name: 'Three:', value: file ? file.name : 'z' }
+                ],
+                timestamp: new Date().toISOString()
+            }]*/
+        }));
+
+        await fetch(webhookUrl, {
+            method: 'POST',
+            body: discordData
+        });
+
+        document.getElementById("theForm").reset();
+        //fileName.textContent = 'No file chosen';
+
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
+
 
 updateUI();
 teleport("top");

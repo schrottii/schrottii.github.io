@@ -50,7 +50,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: text;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 html {
@@ -141,7 +141,7 @@ button {
     border-bottom: 8px groove;
     border-color: #FCF988;
     color: #170217;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 1200px) {
