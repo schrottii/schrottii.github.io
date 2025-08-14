@@ -141,7 +141,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.6.2", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "3.9.1", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -157,7 +157,7 @@ const games = {
         info: ["semiactive", "Semi-Active (2021-2022, 2023+)", "game", "Idle", 4],
     }),
 
-    rainCollector: new Game("Rain Collector", "1.8.2", "rain_collector.png", {
+    rainCollector: new Game("Rain Collector", "1.8.3", "rain_collector.png", {
         git: "rain-collector",
         desc: "An idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
         links: [['https://schrottii.github.io/rain-collector/', 'Play Online'], ['https://schrottii.github.io/rain-collector/patch-notes.txt', 'All Updates']],
@@ -199,9 +199,11 @@ const games = {
         info: ["done", "Done (2020-2022)", "game", "Idle", 2],
     }),
 
-    scrapRPG: new Game("ScrapRPG", "Coming soon", "scraprpg.png", {
-        desc: "ScrapRPG is my upcoming massive game! Development originally started with a team of around 12 people, but after severe complications and lack of contributions from others, it became my duty to finish it. It is planned to be released on August 13th, after almost 5 years.",
-        info: ["active", "In development (2021-2025)", "game", "RPG", 1]
+    scrapRPG: new Game("ScrapRPG", "1.0.1", "scraprpg.png", {
+        git: "scraprpg",
+        desc: "After almost four years of troublesome development and breaks, ScrapRPG finally saw the day of light on August 13th! Licensed by Schrott Games, it is the biggest Scrap fangame. Explore, fight and help the NPCS! There are not many maps yet, but they keep coming steadily. Are you ready for an adventure?",
+        links: [['https://schrottii.github.io/scraprpg/', 'Play Online'], ['https://github.com/schrottii/scraprpg/releases/', 'Windows .zip download'], ['https://youtu.be/NeWvscHFotI', 'Release Trailer (YouTube)']],
+        info: ["active", "Active (2021-2025)", "game", "RPG", 1]
     }),
 
     combCalc: new Game("CombCalc", "1.4.1", "combcalc.png", {
