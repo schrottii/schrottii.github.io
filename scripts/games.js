@@ -171,7 +171,7 @@ const games = {
         info: ["active", "Active (2024-)", "game", "Action", 4],
     }),
 
-    screwedSquares: new Game("Screwed Squares", "1.0", "screwed_squares.png", {
+    screwedSquares: new Game("Screwed Squares", "1.1", "screwed_squares.png", {
         git: "screwed-squares",
         desc: "My latest game is simple: you click the Screws in the right order to get rid of the Squares. How long can you survive, how many points can you get? (2025-)",
         links: [['https://schrottii.github.io/screwed-squares/', 'Play Online']],
@@ -199,11 +199,17 @@ const games = {
         info: ["done", "Done (2020-2022)", "game", "Idle", 2],
     }),
 
-    scrapRPG: new Game("ScrapRPG", "1.0.1", "scraprpg.png", {
+    scrapRPG: new Game("ScrapRPG", "1.0.3", "scraprpg.png", {
         git: "scraprpg",
         desc: "After almost four years of troublesome development and breaks, ScrapRPG finally saw the day of light on August 13th! Licensed by Schrott Games, it is the biggest Scrap fangame. Explore, fight and help the NPCS! There are not many maps yet, but they keep coming steadily. Are you ready for an adventure?",
         links: [['https://schrottii.github.io/scraprpg/', 'Play Online'], ['https://github.com/schrottii/scraprpg/releases/', 'Windows .zip download'], ['https://youtu.be/NeWvscHFotI', 'Release Trailer (YouTube)']],
         info: ["active", "Active (2021-2025)", "game", "RPG", 1]
+    }),
+
+    lunaudio: new Game("Lunaudio", "1.0", "lunaudio.png", {
+        desc: "Lunaudio is an audio player that automatically detects .mp3 and other formats in its folders and plays them smoothly. Windows only (2025-)",
+        links: [['https://github.com/schrottii/lunaudio', 'Github page'], ['https://github.com/schrottii/lunaudio/releases/tag/1.0', 'Windows download']],
+        info: ["active", "Active (2025-)", "tool", "Audio player", 3],
     }),
 
     combCalc: new Game("CombCalc", "1.4.1", "combcalc.png", {
