@@ -108,12 +108,6 @@ button {
     }
 }
 
-.gameImg {
-    text-align: left;
-    height: 64px;
-    width: 64px;
-}
-
 .command {
     background-color: black;
     color: limegreen;
@@ -183,6 +177,39 @@ button {
 @media only screen and (min-width: 1200px) {
     .topName {
         max-width: 80%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(66, 0, 66, 0.5);
+    align-items: center;
+}
+
+.gameSplitter {
+    display: "";
+    width: 100%;
+}
+
+.gameImager {
+    width: 16vw;
+    height: 16vw;
+}
+
+@media only screen and (min-width: 780px) {
+    .gameSplitter {
+        display: inline-block;
+        width: 50%
+    }
+
+    .gameImager {
+        width: 8vw;
+        height: 8vw;
     }
 }
 

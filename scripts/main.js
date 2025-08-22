@@ -82,6 +82,7 @@ var clist = [
     ["News", "newsRender"],
     ["About Me", "aboutMe"],
     ["Website Info", "websiteInfo"],
+    ["Scrap Comics", "ScrapComics"],
     ["Discord", "discordServers"],
     ["Settings", "settings"],
 ];
@@ -94,10 +95,63 @@ function renderContentList(){
     let render = "<h3>Content:</h3>";
 
     for (let c in clist){
-        render = render + "<br /><button style='background-color: black; border-color: red; width: 90%; font-size: 20px' onclick='teleport(`" + clist[c][1] + "`)'>" + clist[c][0] + "</button>";
+        render = render + "<br /><button style='background-color: black; border-color: red; width: 90%; font-size: 20px; margin-bottom: 8px' onclick='teleport(`" + clist[c][1] + "`)'>" + clist[c][0] + "</button>";
     }
 
     document.getElementById("contentList").innerHTML = render;
+}
+
+const comics = [
+    "chapter1/chapter1part1",
+    "chapter1/chapter1part2",
+    "chapter1/chapter1part3",
+    "chapter1/chapter1part4",
+    "chapter1/chapter1part5",
+    "chapter1/chapter1part6",
+    "chapter1/chapter1part7",
+    "chapter1/chapter1part8",
+
+    "chapter2/chapter2part1",
+    "chapter2/chapter2part2",
+    "chapter2/chapter2part3",
+    "chapter2/chapter2part4",
+    "chapter2/chapter2part5",
+    "chapter2/chapter2part6",
+    "chapter2/chapter2part7",
+    "chapter2/chapter2part8",
+    "chapter2/chapter2part9",
+
+    "chapter3/chapter3part1",
+    "chapter3/chapter3part2",
+    "chapter3/chapter3part3",
+    "chapter3/chapter3part4",
+];
+
+var currentComic = 0;
+
+function toggleComics() {
+    if (document.getElementById("ComicReader").style.display == "none") {
+        // show
+        document.getElementById("ComicReader").style.display = "";
+        currentComic = 0;
+        document.getElementById("currentComic").src = "images/scrapcomics/" + comics[0] + ".png";
+    }
+    else {
+        document.getElementById("ComicReader").style.display = "none";
+    }
+}
+
+function previousComic() {
+    if (currentComic > 0) {
+        currentComic--;
+        document.getElementById("currentComic").src = "images/scrapcomics/" + comics[currentComic] + ".png";
+    }
+}
+
+function nextComic() {
+    currentComic++;
+    if (currentComic > comics.length - 1) currentComic = 0;
+    document.getElementById("currentComic").src = "images/scrapcomics/" + comics[currentComic] + ".png";
 }
 
 function updateUI() {
@@ -108,6 +162,7 @@ function updateUI() {
     renderGamesFilters();
 }
 
+/*
 document.getElementById("theForm").addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = {
@@ -129,7 +184,7 @@ document.getElementById("theForm").addEventListener('submit', async (e) => {
 
         discordData.append('payload_json', JSON.stringify({
             content: formData.text + (formData.author != "" ? " - " + formData.author : ""),
-            /*embeds: [{
+            embeds: [{
                 title: formData.text,
                 fields: [
                     //{ name: 'One:', value: formData.name || 'x' },
@@ -137,7 +192,7 @@ document.getElementById("theForm").addEventListener('submit', async (e) => {
                     //{ name: 'Three:', value: file ? file.name : 'z' }
                 ],
                 timestamp: new Date().toISOString()
-            }]*/
+            }]
         }));
 
         await fetch(webhookUrl, {
@@ -152,7 +207,7 @@ document.getElementById("theForm").addEventListener('submit', async (e) => {
         console.error('Error:', error);
     }
 });
+*/
 
 
 updateUI();
-teleport("top");

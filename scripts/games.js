@@ -17,8 +17,8 @@ class Game {
     }
 
     render(){
-        let ren = `<div class="gameDiv"><div style="display: inline-block; width: 50%"><img class="gameImg" src="images/games/` + this.image
-            + `" /></div><div style="display: inline-block; width: 50%"><h2>` + this.name + " v" + this.version + `</h2>`;
+        let ren = `<div class="gameDiv"><div class="gameSplitter"><img class="gameImager" src="images/games/` + this.image
+            + `" /></div><div class="gameSplitter"><h2>` + this.name + " v" + this.version + `</h2>`;
         if (this.links != undefined) {
             ren = ren + "<h3>";
             for (var lin in this.links) {
@@ -28,7 +28,6 @@ class Game {
             }
             ren = ren + `</h3>`;
         }
-        ren = ren + `</div>`;
 
         if (this.info != undefined) {
             ren = ren + "<hr><div style='font-size: 16px; display: table;'><div style='display: table-cell; width: 10%;'><img src='images/gameinfo/"
@@ -37,11 +36,14 @@ class Game {
                 + "</div><div style='display: table-cell; width: 10%;'>" + this.renderRating()
                 + "</div></div>";
         }
+
         if (settings.playtype != 0 && this.git != undefined) { // direct play, don't show it if disabled or this is not a playable game/app
             ren = ren + "<hr><button style='min-width: 20%; min-height: 48px; font-size: 32px' onclick='handleDirectPlay(`" + this.links[0][0] + "`, `" + this.git + "`, `" + this.galaxy + "`)'>"
                 + `<img src="images/gameinfo/play.png" height=32px /> `
                 + (settings.playtype == 2 && this.galaxy != undefined ? "G A L A X Y" : "P L A Y") + "</button>";
         }
+        ren = ren + `</div>`;
+
         if (this.desc != undefined) {
             ren = ren + "<hr><br />" + this.desc;
         }
@@ -141,7 +143,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "3.9.1", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.0.1", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -171,7 +173,7 @@ const games = {
         info: ["active", "Active (2024-)", "game", "Action", 4],
     }),
 
-    screwedSquares: new Game("Screwed Squares", "1.1", "screwed_squares.png", {
+    screwedSquares: new Game("Screwed Squares", "1.1.1", "screwed_squares.png", {
         git: "screwed-squares",
         desc: "My latest game is simple: you click the Screws in the right order to get rid of the Squares. How long can you survive, how many points can you get? (2025-)",
         links: [['https://schrottii.github.io/screwed-squares/', 'Play Online']],
@@ -206,9 +208,9 @@ const games = {
         info: ["active", "Active (2021-2025)", "game", "RPG", 1]
     }),
 
-    lunaudio: new Game("Lunaudio", "1.0", "lunaudio.png", {
-        desc: "Lunaudio is an audio player that automatically detects .mp3 and other formats in its folders and plays them smoothly. Windows only (2025-)",
-        links: [['https://github.com/schrottii/lunaudio', 'Github page'], ['https://github.com/schrottii/lunaudio/releases/tag/1.0', 'Windows download']],
+    lunaudio: new Game("Lunaudia", "1.1", "lunaudio.png", {
+        desc: "Lunaudia is an audio player that automatically detects .mp3 and other formats in its folders and plays them smoothly. Windows only (2025-)",
+        links: [['https://github.com/schrottii/lunaudia', 'Github page'], ['https://github.com/schrottii/lunaudia/releases/tag/1.0', 'Windows download']],
         info: ["active", "Active (2025-)", "tool", "Audio player", 3],
     }),
 
@@ -219,7 +221,7 @@ const games = {
         info: ["semiactive", "Semi-Active (2024-)", "tool", "Tools", 3],
     }),
 
-    wggj: new Game("WGGJ", "1.3", "wggj.png", {
+    wggj: new Game("WGGJ", "1.4", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
         info: ["active", "Active (2024-)", "tool", "Framework", 3],
