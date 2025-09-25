@@ -143,7 +143,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.0.1", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.2", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -151,12 +151,12 @@ const games = {
         info: ["active", "Active (2023-)", "game", "Idle", 4],
     }),
 
-    sc2fmfr: new Game("SC2FMFR", "3.6.1", "sc2fmfr.png", {
+    sc2fmfr: new Game("SC2FMFR", "3.7", "sc2fmfr.png", {
         git: "sc2fmfr",
         galaxy: 474,
-        desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>, based on the original Scrap Clicker 2. It is by far the biggest and best mod of that game, it's basically its own game at this point. It takes weeks to complete. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2023)",
+        desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>, based on the original Scrap Clicker 2. It is by far the biggest and best mod of that game, it's basically its own game at this point. It takes weeks to complete. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2022, 2023-2025))",
         links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/oi6i8vi7domjs05/sc2fmfr-3.6.1.apk/file', '3.6.1 APK Download (Mediafire)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
-        info: ["semiactive", "Semi-Active (2021-2022, 2023+)", "game", "Idle", 4],
+        info: ["done", "Done (2021-2022, 2023-2025)", "game", "Idle", 4],
     }),
 
     rainCollector: new Game("Rain Collector", "1.8.3", "rain_collector.png", {
@@ -170,14 +170,14 @@ const games = {
         git: "toasty-bird",
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
-        info: ["active", "Active (2024-)", "game", "Action", 4],
+        info: ["semiactive", "Semi-Active (2024-)", "game", "Action", 4],
     }),
 
-    screwedSquares: new Game("Screwed Squares", "1.1.1", "screwed_squares.png", {
+    screwedSquares: new Game("Screwed Squares", "1.2.1", "screwed_squares.png", {
         git: "screwed-squares",
         desc: "My latest game is simple: you click the Screws in the right order to get rid of the Squares. How long can you survive, how many points can you get? (2025-)",
         links: [['https://schrottii.github.io/screwed-squares/', 'Play Online']],
-        info: ["semiactive", "Semi-Active (2025-)", "game", "Action", 3],
+        info: ["done", "Done (2025-2025)", "game", "Action", 3],
     }),
 
     nameMixer: new Game("Barrel Name Mixer", "2.0", "barrelnamemixer.png", {
@@ -201,7 +201,7 @@ const games = {
         info: ["done", "Done (2020-2022)", "game", "Idle", 2],
     }),
 
-    scrapRPG: new Game("ScrapRPG", "1.0.3", "scraprpg.png", {
+    scrapRPG: new Game("ScrapRPG", "1.0.6", "scraprpg.png", {
         git: "scraprpg",
         desc: "After almost four years of troublesome development and breaks, ScrapRPG finally saw the day of light on August 13th! Licensed by Schrott Games, it is the biggest Scrap fangame. Explore, fight and help the NPCS! There are not many maps yet, but they keep coming steadily. Are you ready for an adventure?",
         links: [['https://schrottii.github.io/scraprpg/', 'Play Online'], ['https://github.com/schrottii/scraprpg/releases/', 'Windows .zip download'], ['https://youtu.be/NeWvscHFotI', 'Release Trailer (YouTube)']],
@@ -214,14 +214,14 @@ const games = {
         info: ["active", "Active (2025-)", "tool", "Audio player", 3],
     }),
 
-    combCalc: new Game("CombCalc", "1.4.1", "combcalc.png", {
+    combCalc: new Game("CombCalc", "1.5", "combcalc.png", {
         git: "combcalc",
         desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2. It tells you the status of the Global Challenge, and offers various calculators. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online'], ['https://schrottii.github.io/combcalc/patch-notes.txt', 'All Updates']],
         info: ["semiactive", "Semi-Active (2024-)", "tool", "Tools", 3],
     }),
 
-    wggj: new Game("WGGJ", "1.4", "wggj.png", {
+    wggj: new Game("WGGJ", "1.5", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
         info: ["active", "Active (2024-)", "tool", "Framework", 3],
