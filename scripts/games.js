@@ -143,7 +143,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.2", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.2.1", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -159,7 +159,7 @@ const games = {
         info: ["done", "Done (2021-2022, 2023-2025)", "game", "Idle", 4],
     }),
 
-    rainCollector: new Game("Rain Collector", "1.8.3", "rain_collector.png", {
+    rainCollector: new Game("Rain Collector", "1.9", "rain_collector.png", {
         git: "rain-collector",
         desc: "An idle game based on the concept of collecting things. Collect raindrops and other things, to buy upgrades and watch the numbers go up! (2024-)",
         links: [['https://schrottii.github.io/rain-collector/', 'Play Online'], ['https://schrottii.github.io/rain-collector/patch-notes.txt', 'All Updates']],
@@ -221,10 +221,17 @@ const games = {
         info: ["semiactive", "Semi-Active (2024-)", "tool", "Tools", 3],
     }),
 
-    wggj: new Game("WGGJ", "1.5", "wggj.png", {
+    wggj: new Game("WGGJ", "1.5.1", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
         info: ["active", "Active (2024-)", "tool", "Framework", 3],
+    }),
+
+    mrrp: new Game("MRRP", "1.0", "mrrp.png", {
+        git: "mrrp",
+        desc: "This is a tool I made for myself to update the Forest Race minigame. (2025-)",
+        links: [['https://schrottii.github.io/mrrp/', 'Use Online']],
+        info: ["semiactive", "Semi-Active (2025-)", "tool", "Tools", 2],
     }),
 
     fisecraft: new Game("Fisecraft", "1.3", "fisecraft.png", {
