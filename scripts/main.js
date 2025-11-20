@@ -1,7 +1,10 @@
 var schrottiisGamesTitle = document.getElementById("schrottiisGamesTitle");
 var gamesTitleAnim = 0;
 
+schrottiisGamesTitle.innerHTML = window.innerWidth >= 640 ? "Schrottii's Games // Balnoom" : "Schrottii/Balnoom";
+
 setInterval(() => {
+    schrottiisGamesTitle.innerHTML = window.innerWidth >= 640 ? "Schrottii's Games // Balnoom" : "Schrottii/Balnoom";
     schrottiisGamesTitle.style.color = ["#75FFFF", "#FFCCF8", "white", "#FFCCF8", "#75FFFF", "yellow", "black"][gamesTitleAnim];
     gamesTitleAnim = (gamesTitleAnim + 1) % 6;
 }, 1000);
@@ -95,7 +98,7 @@ function renderContentList(){
     let render = "<h3>Content:</h3>";
 
     for (let c in clist){
-        render = render + "<br /><button style='background-color: black; border-color: red; width: 90%; font-size: 20px; margin-bottom: 8px' onclick='teleport(`" + clist[c][1] + "`)'>" + clist[c][0] + "</button>";
+        render = render + "<br /><button class='navButton' onclick='teleport(`" + clist[c][1] + "`)'>" + clist[c][0] + "</button>";
     }
 
     document.getElementById("contentList").innerHTML = render;
