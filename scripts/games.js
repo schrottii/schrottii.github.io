@@ -257,6 +257,30 @@ const games = {
         platforms: ["web_pc"]
     }),
 
+    converter: new Game("Wikitext-HTML Converter", "1.0", "Wikitext_HTML_Converter.png", {
+        git: "wikitext-html-converter",
+        desc: "A tool/library with functions to convert between the Wikitext and HTML languages, primarily for tables. Including a visual example with live conversion. (2025-)",
+        links: [['https://schrottii.github.io/wikitext-html-converter/', 'Visual Example']],
+        info: ["semiactive", "Semi-Active (2026-)", "tool", "Tools", 2],
+        platforms: ["web_pc"]
+    }),
+
+    recordsmanager: new Game("Records Manager", "1.0", "Records_Manager.png", {
+        git: "records-manager",
+        desc: "A niche tool to turn wiki-based record tables into something more, with UI, search bar, various editing tools, and more. (2025-)",
+        links: [['https://github.com/schrottii/records-manager/blob/main/README.md', 'README']],
+        info: ["semiactive", "Semi-Active (2026-)", "tool", "Tools", 3],
+        platforms: ["web_pc"]
+    }),
+
+    sc2records: new Game("SC2 Records", "1.0", "SC2_Records.png", {
+        git: "sc2-records",
+        desc: "A records manager for the records of the Scrap Community. (2025-)",
+        links: [['https://schrottii.github.io/sc2-records/', 'View Records'], ['https://official-scrap-2.fandom.com/wiki/Records', 'View Wiki']],
+        info: ["semiactive", "Semi-Active (2026-)", "tool", "Tools", 3],
+        platforms: ["web_pc"]
+    }),
+
     fisecraft: new Game("Fisecraft", "1.3", "fisecraft.png", {
         desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, mobs, some food, some teleportation items and more. It adds 78 recipes, 33 blocks, 33 items, 4 mobs (1 boss) and 2 structures. (2024-)",
         links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download'], ["https://modrinth.com/mod/fisecraft", "Modrinth"]],
