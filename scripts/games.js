@@ -154,7 +154,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.2.1", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.5", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -180,7 +180,7 @@ const games = {
         platforms: ["web_pc", "web_phone"]
     }),
 
-    toastyBird: new Game("Toasty Bird", "1.5.1", "toasty_bird.png", {
+    toastyBird: new Game("Toasty Bird", "1.6", "toasty_bird.png", {
         git: "toasty-bird",
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
@@ -228,9 +228,9 @@ const games = {
         platforms: ["web_pc", "web_phone", "windows"]
     }),
 
-    lunaudio: new Game("Lunaudia", "1.2", "lunaudio.png", {
+    lunaudio: new Game("Lunaudia", "1.3", "lunaudio.png", {
         desc: "Lunaudia is an audio player that automatically detects .mp3 and other formats in its folders and plays them smoothly. Available for Windows and Linux (2025-)",
-        links: [['https://github.com/schrottii/lunaudia', 'Github page'], ['https://github.com/schrottii/lunaudia/releases/tag/1.2', 'Download (Windows/Linux)']],
+        links: [['https://github.com/schrottii/lunaudia', 'Github page'], ['https://github.com/schrottii/lunaudia/releases/tag/1.3', 'Download (Windows/Linux)']],
         info: ["active", "Active (2025-)", "tool", "Audio player", 3],
         platforms: ["windows", "linux"]
     }),
@@ -249,7 +249,7 @@ const games = {
         info: ["active", "Active (2024-)", "tool", "Framework", 3],
     }),
 
-    mrrp: new Game("MRRP", "1.0", "mrrp.png", {
+    mrrp: new Game("MRRP", "1.1", "mrrp.png", {
         git: "mrrp",
         desc: "This is a tool I made for myself to update the Forest Race minigame. (2025-)",
         links: [['https://schrottii.github.io/mrrp/', 'Use Online']],
