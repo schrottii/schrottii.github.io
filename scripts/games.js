@@ -154,7 +154,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.5", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.5.1", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -167,7 +167,7 @@ const games = {
         git: "sc2fmfr",
         galaxy: 474,
         desc: "SC2FMFR is my huge mod of Scrap Clicker 2 Fanmade by <a href='https://veprogames.github.io/'>VeproGames</a>, based on the original Scrap Clicker 2. It is by far the biggest and best mod of that game, it's basically its own game at this point. It takes weeks to complete. This idle game has dozens of features, currencies, 275 achievements, 1000 barrels, and so much more! (2021-2022, 2023-2025))",
-        links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://www.mediafire.com/file/oi6i8vi7domjs05/sc2fmfr-3.6.1.apk/file', '3.6.1 APK Download (Mediafire)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
+        links: [['https://schrottii.github.io/sc2fmfr', 'Play Online'], ['https://galaxy.click/play/474', 'Play on galaxy'], ['https://drive.google.com/file/d/13B1ebTjB2gTth9MbM7fldZsRT5ionxJe/view?usp=drive_link', '3.7 APK Download (Drive)'], ['https://discord.gg/KgK3AgMfaC', 'FR and other mods server']],
         info: ["done", "Done (2021-2022, 2023-2025)", "game", "Idle", 4],
         platforms: ["mobile", "web_pc", "web_phone"]
     }),
@@ -235,11 +235,11 @@ const games = {
         platforms: ["windows", "linux"]
     }),
 
-    combCalc: new Game("CombCalc", "1.5", "combcalc.png", {
+    combCalc: new Game("CombCalc", "1.6", "combcalc.png", {
         git: "combcalc",
-        desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2. It tells you the status of the Global Challenge, and offers various calculators. (2024-)",
+        desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2, Scrap Collector and SC2FMFR. It tells you the status of the Global Challenge, and offers many calculators and other tools. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online'], ['https://schrottii.github.io/combcalc/patch-notes.txt', 'All Updates']],
-        info: ["semiactive", "Semi-Active (2024-)", "tool", "Tools", 3],
+        info: ["semiactive", "Semi-Active (2024-)", "tool", "Tools", 4],
         platforms: ["web_pc", "web_phone"]
     }),
 
