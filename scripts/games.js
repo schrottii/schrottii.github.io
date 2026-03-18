@@ -19,7 +19,7 @@ class Game {
 
     render(){
         let ren = `<div class="gameDiv"><div class="gameSplitter"><img class="gameImager" src="images/games/` + this.image
-            + `" /></div><div class="gameSplitter"><h2>` + this.name + " v" + this.version + `</h2>`;
+            + `" /></div><div class="gameSplitter"><h2 style='background-color: #170217;'>` + this.name + " v" + this.version + `</h2>`;
         if (this.links != undefined) {
             ren = ren + "<h3>";
             for (var lin in this.links) {
@@ -32,7 +32,7 @@ class Game {
 
         if (this.info != undefined) {
             ren = ren + "<hr><div style='font-size: 16px; display: table;'><div style='display: table-cell; width: 10%;'><img src='images/gameinfo/"
-                + this.getInfo("activity") + ".png' style='width: 16px'>" + this.getInfo("activity2")
+                + this.getInfo("activity") + ".png' style='width: 16px'>" + this.getInfo("activity2").split(" ")[0] + "<br /><small>" + this.getInfo("activity2").substr(this.getInfo("activity2").split(" ")[0].length) + "</small>"
                 + "</div><div style='display: table-cell; width: 10%;'>" + this.renderGenre()
                 + "</div><div style='display: table-cell; width: 10%;'>" + this.renderPlatforms()
                 + "<br />" + this.renderRating()
@@ -119,21 +119,21 @@ function renderGamesFilters() {
     let render = "<button onclick='toggleFilters()'>" + (showGameFilters ? "Hide" : "Show") + " Filters</button>   ";
 
     if (showGameFilters) {
-        render = render + "Filter options:";
+        render = render + `Filter options:<table align="center" style="text-align: left;" cellspacing="4"`;
 
-        render = render + "<br />Content types: ";
-        render = render + "<button style='background-color: " + (gamesFilters["type"] == "all" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `all`)'>All types</button>";
-        render = render + "<button style='background-color: " + (gamesFilters["type"] == "game" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `game`)'>Games</button>";
-        render = render + "<button style='background-color: " + (gamesFilters["type"] == "tool" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `tool`)'>Tools</button>";
-        render = render + "<button style='background-color: " + (gamesFilters["type"] == "minecraft" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`type`, `minecraft`)'>Minecraft mods</button>";
+        render = render + "<tr><td>Content types: </td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["type"] == "all" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`type`, `all`)'>All types</button></td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["type"] == "game" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`type`, `game`)'>Games</button></td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["type"] == "tool" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`type`, `tool`)'>Tools</button></td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["type"] == "minecraft" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`type`, `minecraft`)'>Minecraft mods</button></td>";
 
-        render = render + "<br />Activity: ";
-        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "all" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `all`)'>All activities</button>";
-        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "active" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `active`)'>Active</button>";
-        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "semiactive" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `semiactive`)'>Semi-Active</button>";
-        render = render + "<button style='background-color: " + (gamesFilters["activity"] == "done" ? "#FDB1E4" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `done`)'>Done</button>";
+        render = render + "</tr><td>Activity: </td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["activity"] == "all" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `all`)'>All activities</button></td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["activity"] == "active" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `active`)'>Active</button></td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["activity"] == "semiactive" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `semiactive`)'>Semi-Active</button></td>";
+        render = render + "<td><button style='background-color: " + (gamesFilters["activity"] == "done" ? "#170217" : "#7A2C68") + "' onclick='gamesFilter(`activity`, `done`)'>Done</button></td>";
 
-        render = render + "<br /><br />";
+        render = render + "</tr></table>";
     }
 
     gamesFiltersRender.innerHTML = render;

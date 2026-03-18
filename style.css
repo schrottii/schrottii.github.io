@@ -192,6 +192,7 @@ button {
 }
 
 .gameSplitter {
+    vertical-align: top;
     display: "";
     width: 100%;
 }
@@ -251,4 +252,10 @@ button {
     background-color: darkslategray;
     border-color: orange;
     width: 95%;
+}
+
+.limitedWidth {
+    margin: auto;
+    max-width: 800px;
+    overflow-wrap: break-word;
 }

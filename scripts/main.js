@@ -85,6 +85,7 @@ var clist = [
     ["News", "newsRender"],
     ["About Me", "aboutMe"],
     ["Website Info", "websiteInfo"],
+    ["Contact", "contact"],
     ["Scrap Comics", "ScrapComics"],
     ["Discord", "discordServers"],
     ["Settings", "settings"],

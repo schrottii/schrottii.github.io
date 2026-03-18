@@ -8,8 +8,8 @@ class News {
     }
 
     render() {
-        let ren = `<div class="gameDiv">#` + this.id + `: <h2>` + this.header + `</h2>`;
-        ren = ren + this.text;
+        let ren = `<div class="gameDiv">#` + this.id + `: <h2 style="text-align: left; background-color: #170217; width: 60%;">` + this.header + `</h2>`;
+        ren = ren + `<div class="limitedWidth" style="text-align: left; margin-left: 2%;">` + this.text + `</div>`;
         if (this.button != undefined) ren = ren + "<br /><button onclick='window.open(`" + this.button[0] + "`)'>" + this.button[1] + "</button>";
 
         ren = ren + "</div>";
@@ -177,7 +177,8 @@ const news = [
     new News(126, "Screwed Squares OST", "March 4th - New EP out now!! After over a month of wait, it has finally been approved and distributed to most streaming services. It contains the four songs from Screwed Squares, but I think listening to them without the game makes you appreciate them more. I think it has some of the best bits of my modern music (so far)!"),
     new News(127, "Records Manager v1.1", "March 8th - Records Manager (and SC2 Records) have been updated! This update brings the revolutionary Record Points, the ultimate category, showing who is the best at everything. There is also Total Records. It adds Dark Theme, making the site much better to use for many. Furthermore, saving has been improved, the logo has been added, and more."),
     new News(128, "Shgabb Clicker v4.6", "March 13th - Today is my 21st birthday! The long-awaited v4.6 is out now, adding TWO new features: the Scrapyard (14k HMS) and the Black Market (13k HMS)! The Black Market is only available on the 13th of every month, so get today's before it's gone! There you can get exclusive tier X Artifacts (there are 100 total now), and exclusive PFPs, in exchange for Black Tickets. The Scrapyard is aimed at endgame players, with maxed Artifacts, to have another use for their Scrap. But there's plenty of other content too. Two new missions, new PFPs, new Quotes after almost a year, improved Gem Storage, improved Shbook design, and more! Enjoy"),
-    new News(129, "WGGJ v1.6", "March 18th - WGGJ v1.6 is out now, and splits off v1.5.1's line breaks into the new SmartText (not related to AI, don't worry), which can also do automatic line breaks, and - something I've been yearning for - images can be put right into the text, as a part of it. Rotation was also added - images can be rotated around their own axis, even multiple at once, really not an easy task in JS. (I mean, you have seen how that birdy flaps.) Furthermore, the old onHold is now onDrag and there is a new onHold that doesn't require mouse movement. WGGJ just keeps getting more powerful!")
+    new News(129, "WGGJ v1.6", "March 18th - WGGJ v1.6 is out now, and splits off v1.5.1's line breaks into the new SmartText (not related to AI, don't worry), which can also do automatic line breaks, and - something I've been yearning for - images can be put right into the text, as a part of it. Rotation was also added - images can be rotated around their own axis, even multiple at once, really not an easy task in JS. (I mean, you have seen how that birdy flaps.) Furthermore, the old onHold is now onDrag and there is a new onHold that doesn't require mouse movement. WGGJ just keeps getting more powerful!"),
+    new News(130, "Website v2.4", "March 18th - This update improves the design of games and news, makes games significantly more compact when not using direct play, improves design of filters and cool pages, adds email contact (yes, there is a Balnoom email by now), link to pronouns page and more. Mostly just stuff to make it look better and easier to read.")
 
     //new News(, "", ""),
 ]
