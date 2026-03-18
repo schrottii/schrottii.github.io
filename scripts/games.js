@@ -154,7 +154,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.5.1", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.6.1", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -243,13 +243,13 @@ const games = {
         platforms: ["web_pc", "web_phone"]
     }),
 
-    wggj: new Game("WGGJ", "1.5.1", "wggj.png", {
+    wggj: new Game("WGGJ", "1.6", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
-        info: ["active", "Active (2024-)", "tool", "Framework", 3],
+        info: ["active", "Active (2024-)", "tool", "Framework", 4],
     }),
 
-    mrrp: new Game("MRRP", "1.1", "mrrp.png", {
+    mrrp: new Game("MRRP", "1.2", "mrrp.png", {
         git: "mrrp",
         desc: "This is a tool I made for myself to update the Forest Race minigame. (2025-)",
         links: [['https://schrottii.github.io/mrrp/', 'Use Online']],
@@ -265,7 +265,7 @@ const games = {
         platforms: ["web_pc"]
     }),
 
-    recordsmanager: new Game("Records Manager", "1.0", "Records_Manager.png", {
+    recordsmanager: new Game("Records Manager", "1.1", "Records_Manager.png", {
         git: "records-manager",
         desc: "A niche tool to turn wiki-based record tables into something more, with UI, search bar, various editing tools, and more. (2025-)",
         links: [['https://github.com/schrottii/records-manager/blob/main/README.md', 'README']],
