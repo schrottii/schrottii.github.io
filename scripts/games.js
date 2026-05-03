@@ -154,7 +154,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.6.1", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.6.2", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -180,7 +180,7 @@ const games = {
         platforms: ["web_pc", "web_phone"]
     }),
 
-    toastyBird: new Game("Toasty Bird", "1.6", "toasty_bird.png", {
+    toastyBird: new Game("Toasty Bird", "1.7", "toasty_bird.png", {
         git: "toasty-bird",
         desc: "Toasty Bird is a Flappy Bird-like retro arcade casual game. Hop through the pipes and get as many points as you can! Collect Coins and buy Skins and Skills. (2024-)",
         links: [['https://schrottii.github.io/toasty-bird/', 'Play Online'], ['https://cdn.discordapp.com/attachments/1212720406155493406/1216502903804526602/InShot_20240310_223749830.mp4?ex=66009f9d&is=65ee2a9d&hm=150ebbf5e9924510b0fd696b03f5b1d3020d42848b5c271d9fd1e06c8d8b5d14&', 'Trailer']],
@@ -228,7 +228,7 @@ const games = {
         platforms: ["web_pc", "web_phone", "windows"]
     }),
 
-    lunaudio: new Game("Lunaudia", "1.3", "lunaudio.png", {
+    lunaudio: new Game("Lunaudia", "1.4.1", "lunaudio.png", {
         desc: "Lunaudia is an audio player that automatically detects .mp3 and other formats in its folders and plays them smoothly. Available for Windows and Linux (2025-)",
         links: [['https://github.com/schrottii/lunaudia', 'Github page'], ['https://github.com/schrottii/lunaudia/releases/tag/1.3', 'Download (Windows/Linux)']],
         info: ["active", "Active (2025-)", "tool", "Audio player", 3],
@@ -243,13 +243,13 @@ const games = {
         platforms: ["web_pc", "web_phone"]
     }),
 
-    wggj: new Game("WGGJ", "1.6", "wggj.png", {
+    wggj: new Game("WGGJ", "1.7", "wggj.png", {
         desc: "WGGJ (WebGame Graphics Javascript) is a simple framework making it easier to generate Canvas graphics and manage objects. I mostly made this for myself, but if anyone out there has JS experience and wants to make a webgame, this is a good tool. (2024-)",
         links: [['https://github.com/schrottii/wggj', 'Github page'], ['https://schrottii.github.io/wggj/', 'Visual example'], ['https://schrottii.github.io/wggj/README.md', 'Readme']],
         info: ["active", "Active (2024-)", "tool", "Framework", 4],
     }),
 
-    mrrp: new Game("MRRP", "1.2", "mrrp.png", {
+    mrrp: new Game("MRRP", "1.3", "mrrp.png", {
         git: "mrrp",
         desc: "This is a tool I made for myself to update the Forest Race minigame. (2025-)",
         links: [['https://schrottii.github.io/mrrp/', 'Use Online']],
@@ -265,7 +265,7 @@ const games = {
         platforms: ["web_pc"]
     }),
 
-    recordsmanager: new Game("Records Manager", "1.1", "Records_Manager.png", {
+    recordsmanager: new Game("Records Manager", "1.2.1", "Records_Manager.png", {
         git: "records-manager",
         desc: "A niche tool to turn wiki-based record tables into something more, with UI, search bar, various editing tools, and more. (2025-)",
         links: [['https://github.com/schrottii/records-manager/blob/main/README.md', 'README']],
@@ -287,7 +287,7 @@ const games = {
         info: ["semiactive", "Semi-Active (2024-)", "minecraft", "Minecraft mod", 3],
     }),
 
-    easydyes: new Game("Easy Dyes", "1.0", "easy_dyes_logo.png", {
+    easydyes: new Game("Easy Dyes", "1.1", "easy_dyes_logo.png", {
         desc: "Easy Dyes is a simple MC mod that adds a dye station that allows you to turn dyes into other dyes, making them easier to obtain in building-focused modpacks. (2025-)",
         links: [['https://curseforge.com/minecraft/mc-mods/easy-dyes', 'Curseforge page'], ['https://curseforge.com/minecraft/mc-mods/easy-dyes/files/', 'Curseforge download']],
         info: ["semiactive", "Semi-Active (2025-)", "minecraft", "Minecraft mod", 2],
