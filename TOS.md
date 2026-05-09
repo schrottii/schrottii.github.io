@@ -4,7 +4,7 @@ By using this product (game, tool, or mod), you agree to these rules.
 For copyright related "rules", see the LICENSE.md file.
 
 ## 1. General Rules
-*   **Fair Play:** You agree not to use hacks, bots, macros, or any third-party software to interfere with the intended experience or our servers. 
+*   **Fair Play:** You agree not to use hacks, bots, macros, or any third-party software to interfere with the intended experience and balance, or our servers. 
 *   **No Disruption:** You may not attempt to overload our servers (e.g., via DDoS) or scrape data excessively.
 *   **Automated Access:** Unless an official API is provided, automated access to our services is prohibited.
 *   **Promotion of Exploits:** You are prohibited from sharing, hosting, or linking to content (e.g., screenshots on Discord, videos on YouTube) that explains, promotes, or showcases unauthorized game content, how to use cheats, hacks, or exploits in this game.
@@ -19,7 +19,7 @@ We do not guarantee that server-side features or websites hosted online are reac
 *   We reserve the right to block your IP from our servers if you violate the LICENSE.md or these Terms.
 
 ## 4. Responsibility
-*   You are responsible for your own hardware and local data. We are not liable for any lost save files, even if caused by bugs within the software.
+*   You are responsible for your own hardware and local data. We are not liable for any lost save files, if caused by hardware restrictions, or even issues within the software.
 *   If this product allows user-generated content (like names or skins), you agree not to use offensive, illegal, or hateful language.
 
 ## 5. Feedback & Suggestions:
@@ -32,4 +32,4 @@ If you submit suggestions, concept art, or sprites to us (via Discord, E-Mail, o
 ## 6. Changes to Terms:
 We reserve the right to update the License and ToS at any time.
 
-    Legacy Versions: Older versions of the software may contain outdated legal documents or none at all. The latest version of the ToS and License available on our official website or GitHub repository always takes precedence and applies to your use of our services, regardless of the version you are playing.
+    Legacy Versions: Older versions of the software may contain outdated legal documents or none at all. The latest version of the ToS and License available on our official website or GitHub repository always takes precedence and applies to your use of our services, regardless of the version you are on.
