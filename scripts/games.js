@@ -154,7 +154,7 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.6.2", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.6.3", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
@@ -196,7 +196,7 @@ const games = {
         platforms: ["web_pc", "web_phone"]
     }),
 
-    nameMixer: new Game("Barrel Name Mixer", "2.0", "barrelnamemixer.png", {
+    nameMixer: new Game("Barrel Name Mixer", "2.0.1", "barrelnamemixer.png", {
         git: "barrelnames",
         desc: "This tool/game lets you combine barrels from Scrap Clicker 2. Their names and images get mixed. There are a few different ways to mix them, and favorites can be saved. See the barrels you have found in the Barrel Book and combine the ones you want to see! (2022-2025)",
         links: [['https://schrottii.github.io/barrelnames/', 'Play Online'], , ['https://schrottii.github.io/barrelnames/patch-notes.html', 'All Updates']],
@@ -235,7 +235,7 @@ const games = {
         platforms: ["windows", "linux"]
     }),
 
-    combCalc: new Game("CombCalc", "1.6", "combcalc.png", {
+    combCalc: new Game("CombCalc", "1.7.1", "combcalc.png", {
         git: "combcalc",
         desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2, Scrap Collector and SC2FMFR. It tells you the status of the Global Challenge, and offers many calculators and other tools. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online'], ['https://schrottii.github.io/combcalc/patch-notes.txt', 'All Updates']],
@@ -249,7 +249,7 @@ const games = {
         info: ["active", "Active (2024-)", "tool", "Framework", 4],
     }),
 
-    mrrp: new Game("MRRP", "1.3", "mrrp.png", {
+    mrrp: new Game("MRRP", "1.4", "mrrp.png", {
         git: "mrrp",
         desc: "This is a tool I made for myself to update the Forest Race minigame. (2025-)",
         links: [['https://schrottii.github.io/mrrp/', 'Use Online']],
@@ -265,7 +265,7 @@ const games = {
         platforms: ["web_pc"]
     }),
 
-    recordsmanager: new Game("Records Manager", "1.2.1", "Records_Manager.png", {
+    recordsmanager: new Game("Records Manager", "1.4", "Records_Manager.png", {
         git: "records-manager",
         desc: "A niche tool to turn wiki-based record tables into something more, with UI, search bar, various editing tools, and more. (2025-)",
         links: [['https://github.com/schrottii/records-manager/blob/main/README.md', 'README']],
@@ -281,7 +281,7 @@ const games = {
         platforms: ["web_pc"]
     }),
 
-    fisecraft: new Game("Fisecraft", "1.3", "fisecraft.png", {
+    fisecraft: new Game("Fisecraft", "1.4", "fisecraft_logo_new.png", {
         desc: "My first Minecraft mod. It adds a bit of everything: a new armor and tool set, several building blocks, mobs, some food, some teleportation items and more. It adds 78 recipes, 33 blocks, 33 items, 4 mobs (1 boss) and 2 structures. (2024-)",
         links: [['https://curseforge.com/minecraft/mc-mods/fisecraft', 'Curseforge page'], ['https://www.curseforge.com/minecraft/mc-mods/fisecraft/files/', 'Curseforge download'], ["https://modrinth.com/mod/fisecraft", "Modrinth"]],
         info: ["semiactive", "Semi-Active (2024-)", "minecraft", "Minecraft mod", 3],
@@ -291,6 +291,12 @@ const games = {
         desc: "Easy Dyes is a simple MC mod that adds a dye station that allows you to turn dyes into other dyes, making them easier to obtain in building-focused modpacks. (2025-)",
         links: [['https://curseforge.com/minecraft/mc-mods/easy-dyes', 'Curseforge page'], ['https://curseforge.com/minecraft/mc-mods/easy-dyes/files/', 'Curseforge download']],
         info: ["semiactive", "Semi-Active (2025-)", "minecraft", "Minecraft mod", 2],
+    }),
+
+    growingfriends: new Game("Growing Friends", "1.0", "growing_friends_logo.png", {
+        desc: "This unofficial add on to the popular Cobblemon mod lets you grow certain Pokémon! So far, 14 are supported, with unique self-drawn textures, plenty of options in the config, and more content to come (2026-)",
+        links: [['https://curseforge.com/minecraft/mc-mods/cobblemon-growing-friends', 'Curseforge page'], ["https://modrinth.com/mod/cobblemon-growing-friends", "Modrinth"]],
+        info: ["semiactive", "Semi-Active (2025-)", "minecraft", "Minecraft mod", 4],
     }),
 
     examplemod: new Game("Example Mod", "1.0", "examplemod.png", {
