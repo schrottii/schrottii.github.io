@@ -154,11 +154,11 @@ function toggleFilters() {
 
 // List of games, edit here
 const games = {
-    shgabbClicker: new Game("Shgabb Clicker", "4.6.3", "shgabb_clicker.png", {
+    shgabbClicker: new Game("Shgabb Clicker", "4.7", "shgabb_clicker.png", {
         git: "shgabb-clicker",
         galaxy: 488,
         desc: "Shgabb Clicker is my largest idle game, based on one of my best friends, shgabb, and his mysterious name & lore. The game contains many currencies, 150+ Achievements, 75+ Artifacts, minigames such as fishing and more! Updates are released frequently. (2023-)",
-        links: [['https://schrottii.github.io/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki'], ['https://galaxy.click/play/488', 'Play on galaxy'], ['https://schrottii.github.io/shgabb-clicker/patch-notes.txt', 'All Updates']],
+        links: [['https://balnoom.com/shgabb-clicker/', 'Play Online'], ['https://shgabb-clicker.fandom.com/wiki/Shgabb_Clicker_Wiki', 'Wiki'], ['https://galaxy.click/play/488', 'Play on galaxy'], ['https://balnoom.com/shgabb-clicker/patch-notes.txt', 'All Updates']],
         info: ["active", "Active (2023-)", "game", "Idle", 4],
         platforms: ["web_pc", "web_phone"]
     }),
@@ -196,7 +196,7 @@ const games = {
         platforms: ["web_pc", "web_phone"]
     }),
 
-    nameMixer: new Game("Barrel Name Mixer", "2.0.1", "barrelnamemixer.png", {
+    nameMixer: new Game("Barrel Name Mixer", "2.0.2", "barrelnamemixer.png", {
         git: "barrelnames",
         desc: "This tool/game lets you combine barrels from Scrap Clicker 2. Their names and images get mixed. There are a few different ways to mix them, and favorites can be saved. See the barrels you have found in the Barrel Book and combine the ones you want to see! (2022-2025)",
         links: [['https://schrottii.github.io/barrelnames/', 'Play Online'], , ['https://schrottii.github.io/barrelnames/patch-notes.html', 'All Updates']],
@@ -228,14 +228,14 @@ const games = {
         platforms: ["web_pc", "web_phone", "windows"]
     }),
 
-    lunaudio: new Game("Lunaudia", "1.4.1", "lunaudio.png", {
+    lunaudio: new Game("Lunaudia", "1.5", "lunaudio.png", {
         desc: "Lunaudia is an audio player that automatically detects .mp3 and other formats in its folders and plays them smoothly. Available for Windows and Linux (2025-)",
         links: [['https://github.com/schrottii/lunaudia', 'Github page'], ['https://github.com/schrottii/lunaudia/releases/tag/1.3', 'Download (Windows/Linux)']],
         info: ["active", "Active (2025-)", "tool", "Audio player", 3],
         platforms: ["windows", "linux"]
     }),
 
-    combCalc: new Game("CombCalc", "1.7.1", "combcalc.png", {
+    combCalc: new Game("CombCalc", "1.9", "combcalc.png", {
         git: "combcalc",
         desc: "This tool assists you with the nerdy and mathematical side of Scrap Clicker 2, Scrap Collector and SC2FMFR. It tells you the status of the Global Challenge, and offers many calculators and other tools. (2024-)",
         links: [['https://schrottii.github.io/combcalc/', 'Use Online'], ['https://schrottii.github.io/combcalc/patch-notes.txt', 'All Updates']],
@@ -249,7 +249,7 @@ const games = {
         info: ["active", "Active (2024-)", "tool", "Framework", 4],
     }),
 
-    mrrp: new Game("MRRP", "1.4", "mrrp.png", {
+    mrrp: new Game("MRRP", "1.4.1", "mrrp.png", {
         git: "mrrp",
         desc: "This is a tool I made for myself to update the Forest Race minigame. (2025-)",
         links: [['https://schrottii.github.io/mrrp/', 'Use Online']],
@@ -265,7 +265,7 @@ const games = {
         platforms: ["web_pc"]
     }),
 
-    recordsmanager: new Game("Records Manager", "1.4", "Records_Manager.png", {
+    recordsmanager: new Game("Records Manager", "1.5", "Records_Manager.png", {
         git: "records-manager",
         desc: "A niche tool to turn wiki-based record tables into something more, with UI, search bar, various editing tools, and more. (2025-)",
         links: [['https://github.com/schrottii/records-manager/blob/main/README.md', 'README']],
